@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtclasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="HTML Introductions"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="In 1980, The Famous Physicist Tim Berners Lee founded HTML. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system. Berners-Lee specified HTML and wrote the browser and server software in late 1990.
+\nIn other words, HTML is an authoring language which is used to create documents on the world wide web. It defines the structured and layout of a web page by using tags and attributes."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="How it Works"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="What do you think, how does HTML works? Here we will explain. HTML is used to describe the visual appearance to displayed the document by the use of internet browser.
+
+These documents are saved in text format and can be easily viewed or edited on operating system that is able to connect to the internet."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ht"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Why to Learn HTML?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Originally, HTML was developed with the intent of defining the structure of documents like headings, paragraphs, lists, and so forth to facilitate the sharing of scientific information between researchers. Now, HTML is being widely used to format web pages with the help of different tags available in HTML language.\n\n
+HTML is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning HTML:\n\nCreate Web site - You can create a website or customize an existing web template if you know HTML well.\n\nBecome a web designer - If you want to start a carrer as a professional web designer, HTML and CSS designing is a must skill.\n\n
+Understand web - If you want to optimize your website, to boost its speed and performance, it is good to know HTML to yield best results.\n\n
+Learn other languages - Once you understands the basic of HTML then other related technologies like javascript, php, or angular are become easier to understand."
+/>
+
+
+
+</LinearLayout>

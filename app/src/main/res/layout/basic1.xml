@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textViewjj16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Java Basics"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="On Days 1 and 2, you learned about Java programming in very broad terms—what a Java
+program and an executable look like, and how to create simple classes. For the remainder of this
+week, you’re going to get down to details and deal with the specifics of what the Java language
+looks like\n\nToday, you won’t define any classes or objects or worry about how any of them communicate
+inside a Java program. Rather, you’ll draw closer and examine simple Java statements—the basic
+things you can do in Java within a method definition such as main().
+\n\nToday you’ll learn about the following\n■ Java statements and expressions\n■ Variables and data types\n■ Comments\n■ Literals\n■ Arithmetic\n■ Comparisons\n■ Logical operators"
+       />
+
+    <TextView
+        android:id="@+id/textViej16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Statements and Expressions"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textVfiew44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="A statement is the simplest thing you can do in Java; a statement forms a single Java operation.
+All the following are simple Java statements:\n\nint i = 1;\n
+import java.awt.Font;\n
+System.out.println(“This motorcycle is a “\n
+ + color + “ “ + make);\n
+m.engineState = true;\n"/>
+
+    <TextView
+        android:id="@+id/texdtVfiew44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Statements sometimes return values—for example, when you add two numbers together or test
+to see whether one value is equal to another. These kind of statements are called expressions.
+We’ll discuss these later on today\nThe most important thing to remember about Java statements is that each one ends with a
+semicolon. Forget the semicolon and your Java program won’t compile.\nJava also has compound statements, or blocks, which can be placed wherever a single statement
+can. Block statements are surrounded by braces ({}). You’ll learn more about blocks in Chapter
+5, “Arrays, Conditionals, and Loops.”"/>
+
+    <TextView
+        android:id="@+id/textViej16i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Variables and Data Types"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texdtVfiew4f4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="8dp"
+        android:text="Variables are locations in memory in which values can be stored. They have a name, a type, and
+a value. Before you can use a variable, you have to declare it. After it is declared, you can then
+assign values to it.\n\n
+Java actually has three kinds of variables: instance variables, class variables, and local variables\n\n
+Instance variables, as you learned yesterday, are used to define attributes or the state for a
+particular object. Class variables are similar to instance variables, except their values apply to all
+that class’s instances (and to the class itself) rather than having different values for each object.\n\n
+Local variables are declared and used inside method definitions, for example, for index counters
+in loops, as temporary variables, or to hold values that you need only inside the method
+definition itself. They can also be used inside blocks ({}), which you’ll learn about later this week.
+Once the method (or block) finishes executing, the variable definition and its value cease to exist.
+Use local variables to store information needed by a single method and instance variables to store
+information needed by multiple methods in the object.\n\nAlthough all three kinds of variables are declared in much the same ways, class and instance
+variables are accessed and assigned in slightly different ways from local variables. Today, you’ll
+focus on variables as used within method definitions; tomorrow, you’ll learn how to deal with
+instance and class variables."
+        />
+
+    <TextView
+        android:id="@+id/textdViewjj16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Declaring Variables"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texdtVfiew4ff4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="8dp"
+        android:text="To use any variable in a Java program, you must first declare it. Variable declarations consist of
+a type and a variable name:\n\nint myAge;\n
+String myName;\n
+boolean isTired;\n\nVariable definitions can go anywhere in a method definition (that is, anywhere a regular Java
+statement can go), although they are most commonly declared at the beginning of the definition
+before they are used:\n\npublic static void main (String args÷]) {\n
+ int count;\n
+ String title;\n
+ boolean isAsleep;\n
+...
+}\n\nYou can string together variable names with the same type:\n\nint x, y, z;\n
+String firstName, \nLastName;\n\nYou can also give each variable an initial value when you declare it:\n\nint myAge, mySize, numShoes = 28;\n
+String myName = “Laura”;\n
+boolean isTired = true;\n
+int a = 4, b = 5, c = 6;\n\nIf there are multiple variables on the same line with only one initializer (as in the first of the
+previous examples), the initial value applies to only the last variable in a declaration. You can also
+group individual variables and initializers on the same line using commas, as with the last
+example, above.
+Local variables must be given values before they can be used (your Java program will not compile
+if you try to use an unassigned local variable). For this reason, it’s a good idea always to give local
+variables initial values. Instance and class variable definitions do not have this restriction (their
+initial value depends on the type of the variable: null for instances of classes, 0 for numeric
+variables, ‘\0’ for characters, and false for booleans)"
+        />
+
+    <TextView
+        android:id="@+id/textdViewfjj16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Notes on Variable Names"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texdtVfiew4ff4f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="8dp"
+        android:text="Variable names in Java can start with a letter, an underscore (_), or a dollar sign ($). They cannot
+start with a number. After the first character, your variable names can include any letter or
+number. Symbols, such as %, *, @, and so on, are often reserved for operators in Java, so be careful
+when using symbols in variable names.
+In addition, the Java language uses the Unicode character set. Unicode is a character set
+definition that not only offers characters in the standard ASCII character set, but also several
+million other characters for representing most international alphabets. This means that you can\nuse accented characters and other glyphs as legal characters in variable names, as long as they have
+a Unicode character number above 00C0.\nFinally, note that the Java language is case-sensitive, which means that uppercase letters are
+different from lowercase letters. This means that the variable X is different from the variable x,
+and a rose is not a Rose is not a ROSE. Keep this in mind as you write your own Java programs
+and as you read Java code other people have written.
+By convention, Java variables have meaningful names, often made up of several words
+combined. The first word is lowercase, but all following words have an initial uppercase letter:\n\n\nButton theButton;\n
+long reallyBigNumber;\n
+boolean currentWeatherStateOfPlanetXShortVersion;\n\n
+"/>
+
+    <TextView
+        android:id="@+id/textdViewfjj1f6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Variable Types"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texdtVfiew4ff4ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="8dp"
+        android:text="In addition to the variable name, each variable declaration must have a type, which defines what
+values that variable can hold. The variable type can be one of three things:\n\n■ One of the eight basic primitive data types\n■ The name of a class\n
+■ An array\n\nYou’ll learn about how to declare and use array variables in Chapter 5\nThe eight primitive data types handle common types for integers, floating-point numbers,
+characters, and boolean values (true or false). They’re called primitive because they’re built into
+the system and are not actual objects, which makes them more efficient to use. Note that these
+data types are machine-independent, which means that you can rely on their sizes and
+characteristics to be consistent across your Java programs.
+There are four Java integer types, each with different ranges of values (as listed in Table 3.1). All
+are signed, which means they can hold either positive or negative numbers. Which type you
+choose for your variables depends on the range of values you expect that variable to hold; if a
+value becomes too big for the variable type, it is truncated."
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bas"/>
+
+    <TextView
+        android:id="@+id/texdtVfiew4ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="8dp"
+        android:text="Floating-point numbers are used for numbers with a decimal part. Java floating-point numbers
+are compliant with IEEE 754 (an international standard for defining floating-point numbers
+and arithmetic). There are two floating-point types: float (32 bits, single-precision) and double
+(64 bits, double-precision).
+The char type is used for individual characters. Because Java uses the Unicode character set, the
+char type has 16 bits of precision, unsigned.
+Finally, the boolean type can have one of two values, true or false. Note that unlike in other
+C-like languages, boolean is not a number, nor can it be treated as one. All tests of boolean
+variables should test for true or false.
+In addition to the eight basic data types, variables in Java can also be declared to hold an instance
+of a particular class:\n\nString LastName;\n
+Font basicFont;\n
+OvalShape myOval;\n\nEach of these variables can then hold only instances of the given class. As you create new classes,
+you can declare variables to hold instances of those classes (and their subclasses) as well."/>
+
+        <TextView
+            android:id="@+id/textdViewfjf6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="8dp"
+            android:textAlignment="center"
+            android:background="@drawable/slide_background"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="Assigning Values to Variables"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texdtVfiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="8dp"
+        android:text="Once a variable has been declared, you can assign a value to that variable by using the assignment
+operator =:\n\nsize = 14;\n
+tooMuchCaffiene = true;"/>
+
+    <TextView
+        android:id="@+id/textiewfjf6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Comments"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texdtiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="8dp"
+        android:text="Java has three kinds of comments. /* and */ surround multiline comments, as in C or C++. All
+text between the two delimiters is ignored:\n\n
+/* I don’t know how I wrote this next part; I was working\n
+ really late one night and it just sort of appeared. I\n
+ suspect the code elves did it for me. It might be wise\n
+ not to try and change it.\n\n
+ Comments cannot be nested; that is, you cannot have a comment inside a comment\n\n
+ Double-slashes (//) can be used for a single line of comment. All the text up to the end of the
+line is ignored:\n\n
+int vices = 7; // are there really only 7 vices?\n\n
+The final type of comment begins with /** and ends with */. These are special comments that
+are used for the javadoc system. Javadoc is used to generate API documentation from the code.
+You won’t learn about javadoc in this book; you can find out more information from the
+documentation that came with Sun’s Java Developer’s Kit or from Sun’s Java home page (http:/
+/java.sun.com).\n\n
+*/"/>
+
+    <TextView
+        android:id="@+id/textVdiej16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Literals"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/texdtrff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="8dp"
+        android:text="Literals are used to indicate simple values in your Java programs."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewj16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Literal is a programming language term, which essentially means that what you type is
+what you get. For example, if you type 4 in a Java program, you automatically get an integer
+with the value 4. If you type ‘a’, you get a character with the value a.
+Literals may seem intuitive most of the time, but there are some special cases of literals in Java
+for different kinds of numbers, characters, strings, and boolean values." />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textdiej16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Number Literals"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textVie48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="There are several integer literals. 4, for example, is a decimal integer literal of type int (although
+you can assign it to a variable of type byte or short because it’s small enough to fit into those
+types). A decimal integer literal larger than an int is automatically of type long. You also can force
+a smaller number to a long by appending an L or l to that number (for example, 4L is a long
+integer of value 4). Negative integers are preceded by a minus sign—for example, -45.
+Integers can also be expressed as octal or hexadecimal: a leading 0 indicates that a number is
+octal—for example, 0777 or 0004. A leading 0x (or 0X) means that it is in hex (0xFF, 0XAF45).\n\n
+Hexadecimal numbers can contain regular digits (0–9) or upper- or lowercase hex digits (a–f or
+A–F).\n\nFloating-point literals usually have two parts: the integer part and the decimal part—for
+example, 5.677777. Floating-point literals result in a floating-point number of type double,
+regardless of the precision of that number. You can force the number to the type float by
+appending the letter f (or F) to that number—for example, 2.56F.
+You can use exponents in floating-point literals using the letter e or E followed by the exponent
+(which can be a negative number): 10e45 or .36E-2."/>
+
+    <TextView
+        android:id="@+id/textddiej16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Boolean Literals"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/textView4f8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Boolean literals consist of the keywords true and false. These keywords can be used anywhere
+you need a test or as the only possible values for boolean variables." />
+
+    <TextView
+        android:id="@+id/textiej16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Character Literals"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Character literals are expressed by a single character surrounded by single quotes: ’a’, ’#’, ’3’,
+and so on. Characters are stored as 16-bit Unicode characters. Table 3.2 lists the special codes
+that can represent nonprintable characters, as well as characters from the Unicode character set.
+The letter d in the octal, hex, and Unicode escapes represents a number or a hexadecimal digit
+(a–f or A–F)." />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/basic3"/>
+
+    <TextView
+        android:id="@+id/textkiej16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="String Literals"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textVilw4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="A combination of characters is a string. Strings in Java are instances of the class String. Strings
+are not simple arrays of characters as they are in C or C++, although they do have many arraylike characteristics (for example, you can test their length and add and delete individual
+characters as if they were arrays). Because string objects are real objects in Java, they have
+methods that enable you to combine, test, and modify strings very easily.\n\nString literals consist of a series of characters inside double quotes:\n\n
+“Hi, I’m a string literal.”\n“” //an empty string\n\nStrings can contain character constants such as newline, tab, and Unicode characters:\n\n
+“A string with a \t tab in it”\n
+“Nested strings are \”strings inside of\” other strings”\n
+“This string brought to you by Java\u2122”\n\n
+In the last example, the Unicode code sequence for \u2122 produces a trademark symbol (™).\n
+When you use a string literal in your Java program, Java automatically creates an instance of the
+class String for you with the value you give it. Strings are unusual in this respect; the other literals
+do not behave in this way (none of the primitive base types are actual objects), and usually
+creating a new object involves explicitly creating a new instance of a class. You’ll learn more about
+strings, the String class, and the things you can do with strings later today and tomorrow." />
+
+
+
+    <TextView
+        android:id="@+id/texiej16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Expressions and Operators"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textgewj16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textVig48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Expressions are statements that return a value.
+Operators are special symbols that are commonly used in expressions" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textVifg48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Arithmetic and tests for equality and magnitude are common examples of expressions. Because
+they return a value, you can assign that result to a variable or test that value in other Java
+statements.
+Operators in Java include arithmetic, various forms of assignment, increment and decrement,
+and logical operations. This section describes all these things." />
+
+    <TextView
+        android:id="@+id/textViejj16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Arithmetic"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textVifg4k8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Java has five operators for basic arithmetic (see Table 3.3)."
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bass5"/>
+
+    <TextView
+        android:id="@+id/textVif4k8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Each operator takes two operands, one on either side of the operator. The subtraction operator
+(–) can also be used to negate a single operand.
+Integer division results in an integer. Because integers don’t have decimal fractions, any
+remainder is ignored. The expression 31 ÷ 9, for example, results in 3 (9 goes into 31 only 3
+times).
+Modulus (%) gives the remainder once the operands have been evenly divided. For example, 31
+% 9 results in 4 because 9 goes into 31 three times, with 4 left over.
+Note that, for integers, the result type of most operations is an int or a long, regardless of the
+original type of the operands. Large results are of type long; all others are int. Arithmetic wherein
+one operand is an integer and another is a floating point results in a floating-point result. (If
+you’re interested in the details of how Java promotes and converts numeric types from one type\n
+to another, you may want to check out the Java Language Specification; that’s more detail than
+I want to cover here.)
+Listing 3.1 is an example of simple arithmetic"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arit"/>
+
+    <TextView
+        android:id="@+id/textVejj16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="More About Assignment"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+
+    <TextView
+        android:id="@+id/textVivf4k8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Variable assignment is a form of expression; in fact, because one assignment expression results
+in a value, you can string them together like this:\n\nx = y = z = 0;
+\n\nIn this example, all three variables now have the value 0.
+The right side of an assignment expression is always evaluated before the assignment takes place.
+This means that expressions such as x = x + 2 do the right thing; 2 is added to the value of x,
+and then that new value is reassigned to x. In fact, this sort of operation is so common that Java
+has several operators to do a shorthand version of this, borrowed from C and C++. Table 3.4
+shows these shorthand assignment operators."/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/xyz"/>
+
+    <TextView
+        android:id="@+id/textVejhj16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Incrementing and Decrementing"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textVf4k8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="As in C and C++, the ++ and –– operators are used to increment or decrement a value by 1. For
+example, x++ increments the value of x by 1 just as if you had used the expression x = x + 1.
+Similarly x–– decrements the value of x by 1.\n\nThese increment and decrement operators can be prefixed or postfixed; that is, the ++ or –– can
+appear before or after the value it increments or decrements. For simple increment or decrement
+expressions, which one you use isn’t overly important. In complex assignments, where you are
+assigning the result of an increment or decrement expression, which one you use makes a
+difference.Take, for example, the following two expressions:\n\ny = x++;\n
+y = ++x;\n\nThese two expressions give very different results because of the difference between prefix and
+postfix. When you use postfix operators (x++ or x––), y gets the value of x before before x is
+incremented; using prefix, the value of x is assigned to y after the increment has occurred. Listing
+3.2 is a Java example of how all this works."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exe"/>
+
+    <TextView
+        android:id="@+id/textVjhj16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Comparisons"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texVf4k8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Java has several expressions for testing equality and magnitude. All of these expressions return
+a boolean value (that is, true or false). Table 3.5 shows the comparison operators:"/>
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/com"/>
+
+    <TextView
+        android:id="@+id/textVjhj6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Comparisons"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texfVf4k8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Expressions that result in boolean values (for example, the comparison operators) can be
+combined by using logical operators that represent the logical combinations AND, OR, XOR, and
+logical NOT.
+For AND combinations, use either the  or . The expression will be true only if both operands
+tests are also true; if either expression is false, the entire expression is false. The difference between
+the two operators is in expression evaluation. Using , both sides of the expression are evaluated
+regardless of the outcome. Using , if the left side of the expression is false, the entire expression
+returns false, and the right side of the expression is never evaluated.
+For OR expressions, use either | or ||. OR expressions result in true if either or both of the operands
+is also true; if both operands are false, the expression is false. As with  and  the single |
+evaluates both sides of the expression regardless of the outcome; with ||, if the left expression
+is true, the expression returns true and the right side is never evaluated.
+In addition, there is the XOR operator ^, which returns true only if its operands are different (one
+true and one false, or vice versa) and false otherwise (even if both are true).
+In general, only the  and || are commonly used as actual logical combinations. , |, and ^ are
+more commonly used for bitwise logical operations.
+For NOT, use the ! operator with a single expression argument. The value of the NOT expression
+is the negation of the expression; if x is true, !x is false"/>
+
+    <TextView
+        android:id="@+id/bitwise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Bitwise Operators"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texfVf4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Finally, here’s a short summary of the bitwise operators in Java. These are all inherited from C
+and C++ and are used to perform operations on individual bits in integers. This book does not
+go into bitwise operations; it’s an advanced topic covered better in books on C or C++. Table
+3.6 summarizes the bitwise operators."
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bit1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bit2"/>
+
+
+    <TextView
+        android:id="@+id/bitwifse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Operator Precedence"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texfVpf4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Operator precedence determines the order in which expressions are evaluated. This, in some
+cases, can determine the overall value of the expression. For example, take the following
+expression:\n\ny = 6 + 4 / 2\n\nDepending on whether the 6 + 4 expression or the 4 ÷ 2 expression is evaluated first, the value
+of y can end up being 5 or 8. Operator precedence determines the order in which expressions
+are evaluated, so you can predict the outcome of an expression. In general, increment and
+decrement are evaluated before arithmetic, arithmetic expressions are evaluated before comparisons, and comparisons are evaluated before logical expressions. Assignment expressions are
+evaluated last.\n\nTable 3.8 shows the specific precedence of the various operators in Java. Operators further up
+in the table are evaluated first; operators on the same line have the same precedence and are
+evaluated left to right based on how they appear in the expression itself. For example, give that
+same expression y = 6 + 4 ÷ 2, you now know, according to this table, that division is evaluated
+before addition, so the value of y will be 8.
+"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pro"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/procedence"/>
+
+    <TextView
+        android:id="@+id/texfVpf4d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="You can always change the order in which expressions are evaluated by using parentheses around
+the expressions you want to evaluate first. You can nest parentheses to make sure expressions
+evaluate in the order you want them to (the innermost parenthetical expression is evaluated
+first). The following expression results in a value of 5, because the 6 + 4 expression is evaluated
+first, and then the result of that expression (10) is divided by 2:
+y = (6 + 4) / 2
+Parentheses also can be useful in cases where the precedence of an expression isn’t immediately
+clear—in other words, they can make your code easier to read. Adding parentheses doesn’t hurt,
+so if they help you figure out how expressions are evaluated, go ahead and use them"/>
+
+    <TextView
+        android:id="@+id/bitwdifse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="String Arithmetic"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texfVpfff4d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="One special expression in Java is the use of the addition operator (+) to create and concatenate
+strings. In most of the previous examples shown today and in earlier lessons, you’ve seen lots of
+lines that looked something like this:
+System.out.println(name + “ is a “ + color “ beetle”);
+The output of that line (to the standard output) is a single string, with the values of the variables
+(here, name and color), inserted in the appropriate spots in the string. So what’s going on here?\nThe + operator, when used with strings and other objects, creates a single string that contains
+the concatenation of all its operands. If any of the operands in string concatenation is not a string,
+it is automatically converted to a string, making it easy to create these sorts of output lines.\nString concatenation makes lines such as the previous one especially easy to construct. To create
+a string, just add all the parts together—the descriptions plus the variables—and output it to the
+standard output, to the screen, to an applet, or anywhere.
+The += operator, which you learned about earlier, also works for strings. For example, take the\nThe += operator, which you learned about earlier, also works for strings. For example, take the
+following expression:\n\nmyName += “ Jr.”;\n\nThis expression is equivalent to this:\n\nmyName = myName + “ Jr.”;\n\njust as it would be for numbers. In this case, it changes the value of myName (which might be
+something like John Smith to have a Jr. at the end (John Smith Jr.)."/>
+
+    <TextView
+        android:id="@+id/bitgwdifse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/texvfVpf4d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="As you learned in the last two lessons, a Java program is made up primarily of classes and objects.
+        Classes and objects, in turn, are made up of methods and variables, and methods are made up
+        of statements and expressions. It is those last two things that you’ve learned about today; the
+        basic building blocks that enable you to create classes and methods and build them up to a fullfledged Java program.
+        Today, you learned about variables, how to declare them and assign values to them; literals for
+        easily creating numbers, characters, and strings; and operators for arithmetic, tests, and other
+        simple operations. With this basic syntax, you can move on tomorrow to learning about working
+        with objects and building simple useful Java programs.
+        To finish up this summary, Table 3.8 is a list of all the operators you learned about today so that
+        you can refer back to them."/>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fi1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fi"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

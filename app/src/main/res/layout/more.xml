@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="More About Methods"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Methods are arguably the most important part of any object-oriented language. Whereas classes
+and objects provide the framework, and class and instance variables provide a way of holding
+that class or object’s attributes and state, it is the methods that actually provide an object’s
+behavior and define how that object interacts with other objects in the system.
+Yesterday, you learned a little about defining methods. With what you learned yesterday, you
+could create lots of Java programs, but you’d be missing some of the features of methods that
+make them really powerful, that make your objects and classes more efficient and easier to
+understand. Today, you’ll learn about these additional features, including the following:\n\n■ Overloading methods, sometimes called creating polymorphic methods—that is,
+creating methods with multiple signatures and definitions but with the same name
+■ Creating constructor methods—methods that enable you to initialize objects to set up
+an initial state in the system when an object is created\n
+■ Overriding methods—creating a different definition for a method that has been
+defined in a superclass\n
+■ Finalizer methods—a way for an object to clean up after itself before it is removed
+from the system\n\n"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating Methods with the Same
+Name, Different Arguments"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Yesterday, you learned how to create methods with a single name and a single signature.
+Methods in Java can also be overloaded—that is, you can create methods that have the same
+name, but different signatures and different definitions. Method overloading enables instances
+of your class to have a simpler interface to other objects (no need for entirely different methods
+that do essentially the same thing) and to behave differently based on the input to that method.
+When you call a method in an object, Java matches up the method name and the number and
+type of arguments to choose which method definition to execute.
+To create an overloaded method, all you need to do is create several different method definitions
+in your class, all with the same name, but with different parameter lists (either in number or type
+of arguments) and with different bodies. Java can understand method overloading as long as
+each parameter list is unique for each method name.
+Note that Java differentiates overloaded methods with the same name, based on the number and
+type of parameters to that method, not on its return type. That is, if you try to create two methods
+with the same name, same parameter list, but different return types, you’ll get a compiler error.
+The variable names you choose for each parameter to the method are irrelevant—all that matters
+is the number and the type.\nHere’s an example of creating an overloaded method. Listing 7.1 shows a simple class definition
+for a class called MyRect, which defines a rectangular shape. The MyRect class has four instance
+variables to define the upper left and lower right corners of the rectangle: x1, y1, x2, and y2."/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/react"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="When a new instance of the myRect class is initially created, all its instance variables are initialized
+to 0. Let’s define a buildRect() method that takes four integer arguments and “resizes” the
+rectangle to have the appropriate values for its corners, returning the resulting rectangle object
+(note that because the arguments have the same names as the instance variables, you have to
+make sure to use this to refer to them):\n\nMyRect buildRect(int x1, int y1, int x2, int y2) {\n
+ this.x1 = x1;\n
+ this.y1 = y1;\n
+ this.x2 = x2;\n
+ this.y2 = y2;\n
+ return this;\n
+}\n\nWhat if you want to define a rectangle’s dimensions in a different way—for example, by using
+Point objects rather than individual coordinates? You can overload buildRect() so that its
+parameter list takes two Point objects (note that you’ll need to import the Point class at the top
+of your source file so Java can find it):\n\nMyRect buildRect(Point topLeft, Point bottomRight) {\n
+ x1 = topLeft.x;\n
+ y1 = topLeft.y;\n
+ x2 = bottomRight.x;\n
+ y2 = bottomRight.y;\n
+ return this;\n
+}\n\nPerhaps you want to define the rectangle using a top corner and a width and height. Just create
+a different definition for buildRect():\n\nMyRect buildRect(Point topLeft, int w, int h) {\n
+ x1 = topLeft.x;\n
+ y1 = topLeft.y;\n
+ x2 = (x1 + w);\n
+ y2 = (y1 + h);\n
+ return this;\n
+}\n\nTo finish up this example, let’s create a method to print out the rectangle’s coordinates, and a
+main() method to test it all (just to prove that this does indeed work). Listing 7.2 shows the
+completed class definition with all its methods.\n\n"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ll"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Constructor Methods"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="In addition to regular methods, you can also define constructor methods in your class definition.\n\nUnlike regular methods, you can’t call a constructor method by calling it directly; instead,
+constructor methods are called by Java automatically. Here’s how it works: when you use new
+to create a new instance of a class, Java does three things:\n\n■ Allocates memory for the object\n■ Initializes that object’s instance variables, either to their initial values or to a default (0
+for numbers, null for objects, false for booleans)\n
+■ Calls the class’s constructor method (which may be one of several methods\n\nIf a class doesn’t have any special constructor methods defined, you’ll still end up with an object,
+but you’ll have to set its instance variables or call other methods that object needs to initialize
+itself to that object afterward. All the examples you’ve created up to this point have behaved like
+this\nBy defining constructor methods in your own classes, you can set initial values of instance
+variables, call methods based on those variables or call methods on other objects, or calculate
+initial properties of your object. You can also overload constructors, as you would regular
+methods, to create an object that has specific properties based on the arguments you give to new."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Basic Constructors"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Constructors look a lot like regular methods, with two basic differences:\n\n■ Constructors always have the same name as the class.
+\n■ Constructors don’t have a return type.\n\nFor example, Listing 7.3 shows a simple class called Person, with a constructor that initializes
+its instance variables based on the arguments to new. The class also includes a method for the
+object to introduce itself, and a main() method to test each of these things."/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cs"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cs2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Calling Another Constructor"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Some constructors you write may be a superset of another constructor defined in your class; that
+is, they might have the same behavior plus a little bit more. Rather than duplicating identical
+behavior in multiple constructor methods in your class, it makes sense to be able to just call that
+first constructor from inside the body of the second constructor. Java provides a special syntax
+for doing this. To call a constructor defined on the current class, use this form:\n\nthis(arg1, arg2, arg3...);\n\nThe arguments to this are, of course, the arguments to the constructor"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating Methods
+that Override Existing Methods"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="To override a method, all you have to do is create a method in your superclass that has the same
+signature (name, return type, and parameter list) as a method defined by one of your class’s
+superclasses. Because Java executes the first method definition it finds that matches the
+signature, this effectively “hides” the original method definition. Here’s a simple example;
+Listing 7.5 shows a simple class with a method called printMe(), which prints out the name of
+the class and the values of its instance variables."/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/p"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Overriding Constructors"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Constructors cannot technically be overridden. Because they always have the same name as the
+current class, you’re always creating new constructors instead of inheriting the ones you’ve got.
+Much of the time, this is fine, because when your class’s constructor is called, the constructor
+with the same signature for all your superclass is also called, so initialization of all the parts of
+a class you inherit can happen.
+However, when you’re defining constructors for your own class, you may want to change how
+your object is initialized, not only by initializing the information your class adds, but also to
+change the information that is already there. You can do this by explicitly calling your
+superclass’s constructors.
+To call a regular method in a superclass, you use super.methodname(arguments). Because with
+constructors you don’t have a method name to call, however, you have to use a different form:
+super(arg1, arg2, ...);
+Similar to using this(...) in a constructor, super(...) calls the constructor method for the
+immediate superclass (which may, in turn, call the constructor of its superclass, and so on)."/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Today, you learned all kinds of techniques for using, reusing, defining, and redefining methods.
+You learned how to overload a method name so that the same method can have different
+behaviors based on the arguments with which it’s called. You learned about constructor
+methods, which are used to initialize a new object when it’s created. You learned about method
+inheritance and how to override methods that have been defined in a class’s superclasses. Finally,
+you learned about finalizer methods, that can be used to clean up after an object just before that
+object is garbage-collected and its memory reclaimed.
+Congratulations on completing your first week of Teach Yourself Java in 21 Days! Starting next
+week, you’ll apply everything you’ve learned this week to writing Java applets and to working
+with more advanced concepts in putting together Java programs and working with the standard
+Java class libraries."/>
+
+
+
+
+
+</LinearLayout>

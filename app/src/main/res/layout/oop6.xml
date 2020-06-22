@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Before you compile this class, let’s add one more method. The showAtts method prints the current values of the instance variables in an instance of your Motorcycle class. Here’s what it looks like:" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="void showAtts() { \n System.out.println(“This motorcycle is a “\n  + color + “ “ + make);\n  if (engineState == true) \n System.out.println(“The engine is on.”); \n else System.out.println(“The engine is off.”);\n }" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="The showAtts method prints two lines to the screen: the make and color of the motorcycle object, and whether or not the engine is on or off Save that file again and compile it using javac: javac Motorcycle.java" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="What happens if you now use the Java interpreter to run this compiled class? Try it. Java assumes that this class is an application and looks for a main method. This is just a class, however, so it doesn’t have a main method. The Java interpreter (java) gives you an error like this one: \n\nIn class Motorcycle: void main(String argv[]) is not defined\n\nTo do something with the Motorcycle class—for example, to create instances of that class and play with them—you’re going to need to create a Java application that uses this class or add a main method to this one. For simplicity’s sake, let’s do the latter. Listing 2.1 shows the main() method you’ll add to the Motorcycle class (you’ll go over what this does in a bit)." />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fig1" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Exceptions"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Today, you’ll learn about exceptional conditions in Java:\n
+■ How to declare when you are expecting one\n
+■ How to handle them in your code\n
+■ How to create them\n
+■ How your code is limited, yet made more robust by them\n\n
+Let’s begin by motivating why new ways of handling exceptions were invented.\n
+Programming languages have long labored to solve the following common problem:
+int status = callSomethingThatAlmostAlwaysWorks();\n
+if (status == FUNNY_RETURN_VALUE) {\n
+ . . . // something unusual happened, handle it\n
+ switch(someGlobalErrorIndicator) {\n
+ . . . // handle more specific problems\n
+ }\n
+}\n else {\n
+ . . . // all is well, go your merry way\n
+}\n\nSomehow this seems like a lot of work to do to handle a rare case. What’s worse, if the function
+called returns an int as part of its normal answer, you must distinguish one special integer
+(FUNNY_RETURN_VALUE) to indicate an error. What if that function really needs all the integers?
+You must do something even more ugly.
+Even if you manage to find a distinguished value (such as NULL in C for pointers, -1 for integers,
+and so forth), what if there are multiple errors that must be produced by the same function?
+Often, some global variable is used as an error indicator. The function stores a value in it and
+prays that no one else changes it before the caller gets to handle the error. Multiple errors
+propagate badly, if at all, and there are numerous problems with generalizing this to large
+programs, complex errors, and so forth.
+Luckily, there is an alternative: using exceptions to help you handle exceptional conditions in
+your program, making the normal, nonexceptional code cleaner and easier to read."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Today, you learned about how exceptions aid your program’s design, robustness, and
+multithreading capability (more on this tomorrow).
+You also learned about the vast array of exceptions defined and thrown in the Java class library,
+and how to try methods while catch-ing any of a hierarchically ordered set of possible exceptions
+and errors. Java’s reliance on strict exception handling does place some restrictions on the
+programmer, but you learned that these restrictions are light compared to the rewards.
+Finally, the finally clause was discussed, which provides a fool-proof way to be certain that
+something is accomplished, no matter what."/>
+
+</LinearLayout>

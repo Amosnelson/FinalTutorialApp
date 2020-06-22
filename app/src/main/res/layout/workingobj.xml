@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textVidewjj16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Working with Objects"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/textViewle49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Let’s start today’s lesson with an obvious statement: because Java is an object-oriented language,
+you’re going to be dealing with a lot of objects. You’ll create them, modify them, move them
+around, change their variables, call their methods, combine them with other objects—and, of
+course, develop classes and use your own objects in the mix.\n\nToday, therefore, you’ll learn all about the Java object in its natural habitat. Today’s topics
+include:\n\n■ Creating instances of classes\n■ Testing and modifying class and instance variables in your new instance\n■ Calling methods in that object\n
+■ Casting (converting) objects and other data types from one class to another\n■ Other odds and ends about working with objects\n
+■ An overview of the Java class libraries"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewjj16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating New Objects"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textewle49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="When you write a Java program, you define a set of classes. As you learned on Day 2, classes are
+templates for objects; for the most part, you merely use the class to create instances and then work
+with those instances. In this section, therefore, you’ll learn how to create a new object from any
+given class.
+Remember strings from yesterday? You learned that using a string literal—a series of characters
+enclosed in double-quotes—creates a new instance of the class String with the value of that
+string.
+The String class is unusual in that respect—although it’s a class, there’s an easy way to create
+instances of that class using a literal. The other classes don’t have that shortcut; to create instances
+of those classes you have to do so explicitly by using the new operator"/>
+
+    <TextView
+        android:id="@+id/textVdiewjj16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Using new"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textewlde49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="To create a new object, you use new with the name of the class you want to create an instance
+of, then parentheses after that:\n\nString str = new String();\n
+\nRandom r = new Random();\n
+Motorcycle m2 = new Motorcycle()\n\nThe parentheses are important; don’t leave them off. The parentheses can be empty, in which
+case the most simple, basic object is created, or the parentheses can contain arguments that
+determine the initial values of instance variables or other initial qualities of that object. The
+number and type of arguments you can use with new are defined by the class itself by using a
+special method called a constructor; you’ll learn about how to create constructors in your own
+classes later on this week.\nFor example, take the Date class, which creates date objects. Listing 4.1 is a Java program that
+shows three different ways of creating a Date object using new:"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/us1"/>
+
+    <TextView
+        android:id="@+id/textVdiew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="What new Does"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textede49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="What does new do? When you use the new operator, several things happen: first, the new instance
+of the given class is created, and memory is allocated for it. In addition (and most importantly),
+when the new object is created, a special method defined in the given class is called. This special
+method is called a constructor"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewj16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Constructors are special methods for creating and initializing new instances of classes.
+            Constructors initialize the new object and its variables, create any other objects that object
+            needs, and generally perform any other operations the object needs to run." />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/teixtView48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Multiple constructor definitions in a class can each have a different number or type of
+arguments—then, when you use new, you can specify different arguments in the argument list,
+and the right constructor for those arguments will be called. That’s how each of those different
+versions of new that were listed previously can create different things.
+When you create your own classes, you can define as many constructors as you need to
+implement that class’s behavior. You’ll learn how to create constructors on Day 7."/>
+
+
+    <TextView
+        android:id="@+id/textVdiew6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="A Note on Memory Management"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textw48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Memory management in Java is dynamic and automatic. When you create a new object in Java,
+        Java automatically allocates the right amount of memory for that object in the heap. You don’t
+        have to allocate any memory for any objects explicitly; Java does it for you.
+        What happens when you’re finished with that object? How do you de-allocate the memory that
+        object uses? The answer is again: memory management is automatic. Once you finish with an
+        object, that object no longer has any live references to it (it won’t be assigned to any variables
+        you’re still using or stored in any arrays). Java has a garbage collector that looks for unused objects\nand reclaims the memory that those objects are using. You don’t have to do any explicit freeing
+        of memory; you just have to make sure you’re not still holding onto an object you want to get
+        rid of. You’ll learn more specific details about the Java garbage collector and how it works on
+        Day 21."/>
+
+    <TextView
+        android:id="@+id/tefxtVdiew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Accessing and Setting Class and
+Instance Variables"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textwd48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Now you have your very own object, and that object may have class or instance variables defined
+in it. How do you work with those variables? Easy! Class and instance variables behave in exactly
+the same ways as the local variables you learned about yesterday; you just refer to them slightly
+differently than you do regular variables in your code."/>
+
+    <TextView
+        android:id="@+id/tefxtiew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Getting Values"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textwd4j8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="To get at the value to an instance variable, you use dot notation"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textVidewj16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+        android:id="@+id/textVew48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="With dot notation, an instance or class variable name has two parts: the object on the left
+side of the dot, and the variable on the right side of the dot." />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textVe48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="For example, if you have an object assigned to the variable myObject, and that object has a variable
+called var, you refer to that variable’s value like this:\n\nmyObject.var;\n\nThis form for accessing variables is an expression (it returns a value), and both sides of the dot
+are also expressions. This means that you can nest instance variable access. If that var instance
+variable itself holds an object, and that object has its own instance variable called state, you can
+refer to it like this:\n\nmyObject.var.state;\n\nDot expressions are evaluated left to right, so you start with myObject’s variable var, which points
+to another object with the variable state. You end up with the value of that state variable." />
+
+
+    <TextView
+        android:id="@+id/textVidew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Changing Values"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tetVe48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Assigning a value to that variable is equally easy—just tack an assignment operator on the right
+side of the expression:\n\nmyObject.var.state = true;\n\n\nListing 4.2 is an example of a program that tests and modifies the instance variables in a Point
+object. Point is part of the java.awt package and refers to a coordinate point with an x and a y
+value"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/op"/>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/ttVidew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Class Variables"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tebtVe48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Class variables, as you learned before, are variables that are defined and stored in the class itself.
+Their values, therefore, apply to the class and to all its instances.
+With instance variables, each new instance of the class gets a new copy of the instance variables
+that class defines. Each instance can then change the values of those instance variables without
+affecting any other instances. With class variables, there is only one copy of that variable. Every
+instance of the class has access to that variable, but there is only one value. Changing the value
+of that variable changes it for all the instances of that class.\n\nYou define class variables by including the static keyword before the variable itself. You’ll learn
+more about this on Day 6. For example, take the following partial class definition:\n\nclass FamilyMember {
+ static String surname = “Johnson”;\n
+ String name;\n
+ int age;\n
+ ...\n
+}"/>
+
+    <TextView
+        android:id="@+id/tevbtVe48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Instances of the class FamilyMember each have their own values for name and age. But the class
+variable surname has only one value for all family members. Change surname, and all the instances
+of FamilyMember are affected.\n\n
+To access class variables, you use the same dot notation as you do with instance variables. To
+get or change the value of the class variable, you can use either the instance or the name of the
+class on the left side of the dot. Both the lines of output in this example print the same value):\n\n
+FamilyMember dad = new FamilyMember()\n
+System.out.println(“Family’s surname is: “ + dad.surname);\n
+System.out.println(“Family’s surname is: “ + FamilyMember.surname);\n\n
+Because you can use an instance to change the value of a class variable, it’s easy to become
+confused about class variables and where their values are coming from (remember, the value of
+a class variable affects all the instances). For this reason, it’s a good idea to use the name of the
+class when you refer to a class variable—it makes your code easier to read and strange results
+easier to debug"/>
+
+    <TextView
+        android:id="@+id/tvtVidew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Calling Methods"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tdevbtVe48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Calling a method in objects is similar to referring to its instance variables: method calls also use
+dot notation. The object whose method you’re calling is on the left side of the dot; the name
+of the method and its arguments is on the right side of the dot:\n\nmyObject.methodOne(arg1, arg2, arg3);\n\n
+Note that all methods must have parentheses after them, even if that method takes no arguments:\n\nmyObject.methodNoArgs();\n\n
+If the method you’ve called results in an object that itself has methods, you can nest methods
+as you would variables:
+myObject.getClass().getName();
+You can combine nested method calls and instance variable references as well:
+myObject.var.methodTwo(arg1, arg2);\n\nSystem.out.println(), the method you’ve been using all through the book this far, is a great
+example of nesting variables and methods. The System class (part of the java.lang package)
+describes system-specific behavior. System.out is a class variable that contains an instance of the
+class PrintStream that points to the standard output of the system. PrintStream instances have
+a println() method that prints a string to that output stream.
+Listing 4.3 shows an example of calling some methods defined in the String class. Strings
+include methods for string tests and modification, similar to what you would expect in a string
+library in other languages."/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/b1"/>
+
+    <TextView
+        android:id="@+id/tvctVidew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Class Methods"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tdevbe48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Class methods, like class variables, apply to the class as a whole and not to its instances. Class
+methods are commonly used for general utility methods that may not operate directly on an
+instance of that class, but fit with that class conceptually. For example, the String class contains
+a class method called valueOf(), which can take one of many different types of arguments
+(integers, booleans, other objects, and so on). The valueOf() method then returns a new
+instance of String containing the string value of the argument it was given. This method doesn’t
+operate directly on an existing instance of String, but getting a string from another object or data
+type is definitely a String-like operation, and it makes sense to define it in the String class.
+Class methods can also be useful for gathering general methods together in one place (the class).
+For example, the Math class, defined in the java.lang package, contains a large set of
+mathematical operations as class methods—there are no instances of the class Math, but you can
+still use its methods with numeric or boolean arguments.
+To call a class method, use dot notation as you do with instance methods. As with class variables,
+you can use either an instance of the class or the class itself on the left site of the dot. However,
+for the same reasons noted in the discussion on class variables, using the name of the class for
+class variables makes your code easier to read. The last two lines in this example produce the same
+result:\n\nString s, s2;\n
+s = “foo”;\n
+s2 = s.valueOf(5);\n
+s2 = String.valueOf(5);\n\n"/>
+
+    <TextView
+        android:id="@+id/tvcctVidew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="References to Objects"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tcdevbe48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="As you work with objects, one important thing going on behind the scenes is the use of references
+to those objects. When you assign objects to variables, or pass objects as arguments to methods,
+you are passing references to those objects, not the objects themselves or copies of those objects.\nAn example should make this clearer. Examine the following snippet of code:"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/b2"/>
+
+    <TextView
+        android:id="@+id/tftVidew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Casting and Converting Objects and
+Primitive Types"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tc3devbe48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Sometimes in your Java programs you may have a value stored somewhere that is the wrong type.
+Maybe it’s an instance of the wrong class, or perhaps it’s a float and you want it to be an int,
+or it’s an integer and you want it to be a string. To convert the value of one type to another, you
+use a mechanism called casting."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textggViewj16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/teggxtView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Casting is a mechanism of converting the value of an object or primitive type into another
+type. The result of a cast is a new object or value; casting does not affect the original object
+or value." />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tegcgxtView48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Although the concept of casting is a simple one, the rules for what types in Java can be converted
+to what other types are complicated by the fact that Java has both primitive types (int, float,
+boolean), and object types (String, Point, Window, and so on). Because of these three types, there
+are three forms of casts and conversions to talk about in this section:\n\n■ Casting between primitive types: int to float to boolean\n\n■ Casting between object types: an instance of a class to an instance of another class
+\n\n■ Converting primitive types to objects and then extracting primitive values back out of
+those objects\n"/>
+
+
+    <TextView
+        android:id="@+id/ftVidew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Casting Primitive Types"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/cgxtView48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Casting between primitive types enables you to “convert” the value of one type to another
+primitive type—for example, to assign a number of one type to a variable of another type.
+Casting between primitive types most commonly occurs with the numeric types; boolean values
+cannot be cast to any other primitive type. You can, however, cast 1 or 0 to boolean values.
+Often, if the type you are casting to is “larger” than the type of the value you’re converting, you
+may not have to use an explicit cast. You can often automatically treat a byte or a character as
+an int, for example, or an int as a long, an int as a float, or anything as a double automatically.
+In this case, because the larger type provides more precision than the smaller, no loss of
+information occurs when the value is cast.\n\nTo convert a large value to smaller type, you must use an explicit cast, because converting that
+value may result in a loss of precision. Explicit casts look like this:\n\n(typename) value\n\nIn this form, typename is the name of the type you’re converting to (for example: short, int,
+float, boolean), and value is an expression that results in the value you want to convert. This
+expression divides the values of x by the value of y and casts the result to an int:\n\n(int) (x / y);\n\nNote that because the precedence of casting is higher than that of arithmetic, you have to use
+parentheses so that the result of the division is what gets cast to an int."/>
+
+    <TextView
+        android:id="@+id/tVidew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text=" Casting Objects"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cgxtViewd48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Instances of classes can also be cast to instances of other classes, with one restriction: the class
+of the object you’re casting and the class you’re casting it to must be related by inheritance; that
+is, you can cast an object only to an instance of its class’s sub- or superclass—not to any random
+class.
+Analogous to converting a primitive value to a larger type, some objects may not need to be cast
+explicitly. In particular, because instances’ subclasses usually contain all the information that
+instances’ superclasses do, you can use an instance of a subclass anywhere a superclass is expected.
+Suppose you have a method that takes two arguments: one of type Object, and one of type
+Number. You don’t have to pass instances of those particular classes to that method. For the Object
+argument, you can pass any subclass of Object (any object, in other words), and for the Number
+argument you can pass in any instance of any subclass of Number (Integer, Boolean, Float, and
+so on).
+Casting an object to an instance of one of that object’s superclasses loses the information the
+original subclass provided and requires a specific cast. To cast an object to another class, you use
+the same casting operation that you used for base types:
+(classname) object
+In this case, classname is the name of the class you want to cast the object to, and object is a
+reference to the object you’re casting. Note that casting creates a new instance of the new class
+with all the information that the old object contained; the old object still continues to exist as
+it did before.\nHere’s a (fictitious) example of a cast of an instance of the class GreenApple to an instance of the
+class Apple (where GreenApple is theoretically a subclass of Apple):\n\nGreenApple a;\n
+Apple a2;
+\n\na = new GreenApple();
+a2 = (Apple) a;\n\nIn addition to casting objects to classes, you can also cast objects to interfaces—but only if that
+object’s class or one of its superclasses actually implements that interface. Casting an object to
+an interface then enables you to call one of that interface’s methods even if that object’s class does
+not directly implement that interface. You’ll learn more about interfaces in Week 3."/>
+
+    <TextView
+        android:id="@+id/tVcidew16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text=" Converting Primitive Types
+to Objects and Vice Versa"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/cgxtVigewd48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Now you know how to cast a primitive type to another primitive type and how to cast between
+classes. How can you cast one to the other?
+You can’t! Primitive types and objects are very different things in Java and you can’t
+automatically cast or convert between the two. However, the java.lang package includes several
+special classes that correspond to each primitive data type: Integer for ints, Float for floats,
+Boolean for booleans, and so on.
+Using class methods defined in these classes, you can create an object-equivalent for all the
+primitive types using new. The following line of code creates an instance of the Integer class with
+the value 35:
+Integer intObject = new Integer(35);
+Once you have actual objects, you can treat those values as objects. Then, when you want the
+primitive values back again, there are methods for that as well—for example, the intValue()
+method extracts an int primitive value from an Integer object:
+int theInt = intObject.intValue(); // returns 35
+See the Java API documentation for these special classes for specifics on the methods for
+converting primitives to and from objects."/>
+
+    <TextView
+        android:id="@+id/cidefw16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Odds and Ends"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cgxtVigewdr48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="This section is a catchall for other information about working with objects, in particular:\n\n■ Comparing objects\n■ Copying objects\n■ Finding out the class of any given object\n
+■ Testing to see whether an object is an instance of a given class"/>
+
+
+
+    <TextView
+        android:id="@+id/cidfefw16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Comparing Objects"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cgxtVigewdr488"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Yesterday, you learned about operators for comparing values: equals, not equals, less than, and
+so on. Most of these operators work only on primitive types, not on objects. If you try to use other
+values as operands, the Java compiler produces errors.
+The exception to this rule is with the operators for equality: == (equal) and != (not equal). These
+operators, when used with objects, tests whether the two operands refer to exactly the same
+object.
+What should you do if you want to be able to compare instances of your class and have
+meaningful results? You have to implement special methods in your class, and you have to call
+those methods using those method names.\nA good example of this is the String class. It is possible to have two strings, two independent
+objects in memory with the same values—that is, the same characters in the same order.
+According to the == operator, however, those two String objects will not be equal, because,
+although their contents are the same, they are not the same object.
+The String class, therefore, defines a method called equals() that tests each character in the
+string and returns true if the two strings have the same values. Listing 4.4 illustrates this."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cc"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ccb"/>
+
+
+    <TextView
+        android:id="@+id/g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Copying Objects"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cgxtVigewdr8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Recall from the section on object references that assigning variables and passing objects as
+arguments to methods affect only the object’s reference and doesn’t create copies of those
+objects. How do you create copies of objects? There are two ways: the copy() method and the
+clone() method.
+The copy() method (defined in Object, and so available to all objects), takes a single argument—
+another instance of the same class—and copies the values of all the argument’s instance variables
+into the instance variables of the current object (the one in which you’re calling the method).
+Note that if those instance variables in turn hold references to objects, only the references are
+copied, not the objects.
+\n\nPoint pt1, pt2, pt3;\n
+pt1 = new Point(0,0);\n
+pt2 = new Point(100,100);\n\npt2.copy(pt1); // pt1’s values are copied into pt2; both now are (0,0).
+\n\nThe clone() method is similar to copy(), except that clone() takes no arguments. The clone()
+method creates a new instance of the same class as the source object and then copies the values
+of the instance variables (either primitive types or references to other objects). clone() returns
+an instance of the class Object; to use it as an instance of the original class you have to cast it.
+Here’s an example that clones the Point object in pt2 and stores the result in pt3:\n\npt3 = (Point) pt2.clone();\n\n"
+        />
+
+    <TextView
+        android:id="@+id/ciefw16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Determining the Class of an Object"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cgxtVigefdr8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Want to find out the class of an object? Here’s the way to do it for an object assigned to the
+variable obj:
+\n\nString name = obj.getClass().getName();\n\nWhat does this do? The getClass() method is defined in the Object class, and as such is available
+for all objects. The result of that method is a Class object (where Class is itself a class), which
+has a method called getName(). getName() returns a string representing the name of the class.\n\nAnother test that might be useful to you is the instanceof operator. instanceof has two
+operands: an object on the left, and the name of a class on the right. The expression returns true
+or false based on whether the object is an instance of the named class or any of that class’s
+superclasses:\n\n“foo” instanceof String // true\n
+Point pt = new Point(10,10);\n
+pt instanceof String // false\n\nThe instanceof operator can also be used for interfaces; if an object implements an interface,
+the instanceof operator with an interface name on the right side returns true. You’ll learn all
+about interfaces in Week 3."/>
+
+
+    <TextView
+        android:id="@+id/gff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="The Java Class Libraries"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cgxtViger8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="To finish up today, let’s look at the some of the Java class libraries. Actually, you’ve had some
+experience with them already, so they shouldn’t seem that strange.
+The Java class libraries provide the set of classes that are guaranteed to be available in any
+commercial Java environment (for example, in HotJava or in Netscape 2.0). Those classes are
+in the java package and include all the classes you’ve seen so far in this book, plus a whole lot
+more classes you’ll learn about later on in this book (and more you may not learn about at all).
+The Java Developer’s Kit comes with documentation for all the Java class libraries, which
+includes descriptions of each class’s instance variables, methods, constructors, interfaces, and so
+on. A shorter summary of the Java API is in Appendix B as well. Exploring the Java class libraries\nand their methods and instance variables is a great way to figure out what Java can and cannot
+do, as well as a starting point for your own development.
+Here are the class packages that are part of the Java class libraries:\n\n■ java.lang: Classes that apply to the language itself, which includes the Object class,
+the String class, and the System class. It also contains the special classes for the
+primitive types (Integer, Character, Float, and so on).\n\n■ java.util: Utility classes, such as Date, as well as simple collection classes, such as
+Vector and Hashtable.\n\n■ java.io: Input and output classes for writing to and reading from streams (such as
+standard input and output) and for handling files.\n\n■ java.net: Classes for networking support, including Socket and URL (a class to
+represent references to documents on the World Wide Web).\n\n■ java.awt: (the Abstract Window Toolkit): Classes to implement a graphical user
+interface, including classes for Window, Menu, Button, Font, CheckBox, and so on. This
+package also includes classes for processing images (the java.awt.Image package).\n\n■ java.applet: Classes to implement Java applets, including the Applet class itself, as
+well as the AudioClip class\n\nIn addition to the Java classes, your development environment may also include additional
+classes that provide other utilities or functionality. Although these classes may be useful, because
+they are not part of the standard Java library, they won’t be available to other people trying to
+run your Java program. This is particularly important for applets, because applets are expected
+to be able to run on any platform, using any Java-aware browser. Only classes inside the java
+package are guaranteed to be available on all browsers and Java environments"/>
+
+    <TextView
+        android:id="@+id/ggff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cgxtVier8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Objects, objects everywhere. Today, you learned all about how to deal with objects: how to
+create them, how to find out and change the values of their variables, and how to call their
+methods. You also learned how to copy and compare them, and how to convert them into other
+objects. Finally, you learned a bit about the Java class libraries—which give you a whole slew of
+classes to play with in your own programs.
+You now have the fundamentals of how to deal with most simple things in the Java language.
+All you have left are arrays, conditionals, and loops, which you’ll learn about tomorrow. Then
+you’ll learn how to define and use classes in Java applications on Day 6, and launch directly into
+applets next week. With just about everything you do in your Java programs, you’ll always come
+back to objects."/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

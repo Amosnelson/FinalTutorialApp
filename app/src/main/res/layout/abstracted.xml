@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="The Java Abstract Windowing Toolkit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="For the past five days you’ve concentrated on creating applets that do very simple things: display
+text, play an animation or a sound, or enable very basic interactions with the user. Once you get
+past that point, however, you may want to start creating more complex applets that behave like
+real applications, embedded in a Web page—applets that start to look like real GUI applications
+with buttons, menus, text fields and other elements of a real application.\n\n
+It’s this sort of real work in Java applets and applications that Java’s Abstract Windowing
+Toolkit, or AWT, was designed for. You’ve actually been using the AWT all along, as you might
+have guessed from the classes you’ve been importing. The Applet class and most of the classes
+you’ve been using this week are all integral parts of the AWT. In fact, the HotJava browser is
+also written in Java and uses the AWT as well.\n\nThe AWT provides the following:\n\n■ A full set of UI widgets and other components, including windows, menus, buttons,
+checkboxes, text fields, scrollbars, and scrolling lists\n■ Support for UI “containers,” which can contain other embedded containers or UI
+widgets\n■ An event system for managing system and user events between and among parts of the
+AWT\n■ Mechanisms for laying out components in a way that enables platform-independent
+UI design\n\nToday, you’ll learn about how to use all these things in your Java applets. Tomorrow, you’ll learn
+about creating windows, menus, and dialogs, which enable you to pop up separate windows
+from the browser window. In addition, you can use the AWT in stand-alone applications, so
+everything you’ve learned so far this week can still be used. If you find the framework of the Web
+browser too limiting, you can take your AWT background and start writing full-fledged Java
+applications.\n\nToday, however, you’ll continue focusing on applets.\n\n"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="The Java AWT, or Abstract Windowing Toolkit, is a package of Java classes and interfaces for
+creating full-fledged access to a window-based graphical user interface system, with mechanisms
+for graphics display, event management, text and graphics primitives, user interface components, and cross-platform layout. The AWT is used by the HotJava browser itself for all its
+functionality. Applets are also an integral part of the AWT toolkit.\n\nToday has been a big day; the lesson has brought together everything you’ve learned up to this
+point about simple applet management and added a lot more about creating applets, panels, and
+user interface components and managing the interactions between all of them. With the
+information you got today and the few bits that you’ll learn tomorrow, you can create crossplatform Java applications that do just about anything you want."
+        />
+
+</LinearLayout>

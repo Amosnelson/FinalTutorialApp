@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="How Java Differs from C and C++"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="This appendix contains a description of most of the major differences between C, C++ , and the
+Java language. If you are a programmer familiar with either C or C++, you may want to review
+this appendix to catch some of the common mistakes and assumptions programmers make when
+using Java."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Pointers"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Java does not have an explicit pointer type. Instead of pointers, all references to objects—
+including variable assignments, arguments passed into methods, and array elements—are
+accomplished by using implicit references. References and pointers are essentially the same thing
+except that you can’t do pointer arithmetic on references (nor do you need to).
+Reference semantics also enable structures such as linked lists to be created easily in Java without
+explicit pointers; merely create a linked list node with variables that point to the next and the
+previous node. Then, to insert items in the list, assign those variables to other node objects."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Arrays"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Arrays in Java are first class objects, and references to arrays and their contents are accomplished
+through explicit references rather than via point arithmetic. Array boundaries are strictly
+enforced; attempting to read past the ends of an array is a compile or run-time error. As with
+other objects, passing an array to a method passes a reference to the original array, so changing
+the contents of that array reference changes the original array object.
+Arrays of objects are arrays of references that are not automatically initialized to contain actual
+objects. Using the following Java code produces an array of type MyObject with ten elements, but
+that array initially contains only nulls:\n\nMyObject arrayofobjs[] = new MyObject[10];\n\nYou must now add actual MyObject objects to that array:
+\n\nfor (int i; i arrayofobjs.length. i++) {\n
+ arrayofobjs[i] = new MyObject();\n\nJava does not support multidimensional arrays as in C and C++. In Java, you must create arrays
+that contain other arrays.\n\n"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Strings"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Strings in C and C++ are arrays of characters, terminated by a null character (\0). To operate
+on and manage strings, you treat them as you would any other array, with all the inherent
+difficulties of keeping track of pointer arithmetic and being careful not to stray off the end of
+the array.Strings in Java are objects, and all methods that operate on strings can treat the string as a
+complete entity. Strings are not terminated by a null, nor can you accidentally overstep the end
+of a string (like arrays, string boundaries are strictly enforced).
+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Data Types"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="As mentioned in the early part of this book, all Java primitive data types (char, int, long, and
+so on) have consistent sizes and behavior across platforms and operating systems. There are no
+unsigned data types as in C and C++ (except for char, which is a 16-bit unsigned integer).
+The boolean primitive data type can have two values: true or false. Boolean is not an integer,
+nor can it be treated as one, although you cannot cast 0 or 1 (integers) to boolean types in Java.
+Composite data types are accomplished in Java exclusively through the use of class definitions.
+The struct, union, and typedef keywords have all been removed in favor of classes.
+Casting between data types is much more controlled in Java; automatic casting occurs only when
+there will be no loss of information. All other casts must be explicit. The primitive data types
+(int, float, long, char, boolean, and so on) cannot be cast to objects or vice versa; there are
+methods and special “wrapper” classes to convert values between objects and primitive types."
+/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Operators"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Operator precedence and association behaves as it does in C. Note, however, that the new
+keyword (for creating a new object) binds tighter than dot notation (.), which is different
+behavior from C++. In particular, note the following expression:\n\nnew foo().bar;\n\n(new foo()).bar;\n\nOperator overloading, as in C++, cannot be accomplished in Java. The , operator of C has been
+deleted.\nThe >>> operator produces an unsigned logical right shift (remember, there are no unsigned data
+types).
+The + operator can be used to concatenate strings"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Control Flow"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Although the if, while, for, and do statements in Java are syntactically the same as they are in
+C and C++, there is one significant difference. The test expression for each control flow construct
+must return an actual boolean value (true or false). In C and C++, the expression can return
+an integer."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Arguments"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Java does not support mechanisms for optional arguments or for variable-length argument lists
+to functions as in C and C++. All method definitions must have a specific number of arguments.
+Command-line arguments in Java behave differently from those in C and C++. The first element
+in the argument vector (argv[0]) in C and C++ is the name of the program itself; in Java, that
+first argument is the first of the additional arguments. In other words, in Java, argv[0] is argv[1]
+in C and C++; there is no way to get hold of the actual name of the Java program.
+"/>
+
+
+
+</LinearLayout>

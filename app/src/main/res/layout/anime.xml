@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Simple Animation and Threads"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="The first thing I ever saw Java do was an animation: a large red “Hi there!” that ran across the
+screen from the right to left. Even that simple form of animation was enough to make me stop
+and think, “this is really cool.”\n\nThat sort of simple animation takes only a few methods to implement in Java, but those few
+methods are the basis for any Java applet that you want to update the screen dynamically.
+Starting with simple animations is a good way to build up to the more complicated applets.
+Today, you’ll learn the fundamentals of animation in Java: how the various parts of the system
+all work together so that you can create moving figures and dynamic updateable applets.
+Specifically, you’ll explore the following:\n\n■ How Java animations work—the paint() and repaint() methods, starting and
+stopping dynamic applets, and how to use and override these methods in your own
+applets\n■ Threads—what they are and how they can make your applets more well-behaved with
+other applets and with the Java system in genera\n■ Reducing animation flicker, a common problem with animation in Java\n\nThroughout today, you’ll also work with lots of examples of real applets that create animations
+or perform some kind of dynamic movement."/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating Animation in Java"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Animation in Java involves two steps: constructing a frame of animation, and then asking Java
+to paint that frame. Repeat as necessary to create the illusion of movement. The basic, static
+applets that you created yesterday taught you how to accomplish the first part; all that’s left is
+how to tell Java to paint a frame."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Painting and Repainting"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="The paint() method, as you learned yesterday, is called by Java whenever the applet needs to
+be painted—when the applet is initially drawn, when the window containing it is moved, or
+when another window is moved from over it. You can also, however, ask Java to repaint the
+applet at a time you choose. So, to change the appearance of what is on the screen, you construct
+the image or “frame” you want to paint, and then ask Java to paint this frame. If you do this
+repeatedly, and fast enough, you get animation inside your Java applet. That’s all there is to it.
+Where does all this take place? Not in the paint() method itself. All paint() does is put dots
+on the screen. paint(), in other words, is responsible only for the current frame of the animation
+at a time. The real work of changing what paint() does, of modifying the frame for an
+animation, actually occurs somewhere else in the definition of your applet.\nIn that “somewhere else,” you construct the frame (set variables for paint() to use, create color
+or font or other objects that paint() will need), and then call the repaint() method. repaint()
+is the trigger that causes Java to call paint() and causes your frame to get drawn."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Putting It Together"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Explaining how to do Java animation in text is more of a task than actually showing you how
+it works in code. An example or two will help make the relationship between all these methods
+clearer.
+Listing 10.1 shows a sample applet that, at first glance, uses basic applet animation to display
+the date and time and constantly updates it every second, creating a very simple animated digital
+clock (a frame from that clock is shown in Figure 10.1).\nThe words “at first glance” in the previous paragraph are very important: this applet doesn’t
+work! However, despite the fact that it doesn’t work, you can still learn a lot about basic
+animation with it, so working through the code will still be valuable. In the next section, you’ll
+learn just what’s wrong with it.
+See whether you can figure out what’s going on with this code before you go on to the analysis"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fig"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Threads: What They Are
+and Why You Need Them"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Depending on your experience with operating systems and with environments within those
+systems, you may or may not have run into the concept of threads. Let’s start from the beginning
+with some definitions\nWhen a program runs, it starts executing, runs its initialization code, calls methods or
+procedures, and continues running and processing until it’s complete or until the program is
+exited. That program uses a single thread—where the thread is a single locus of control for the
+program.
+Multithreading, as in Java, enables several different execution threads to run at the same time
+inside the same program, in parallel, without interfering with each other.
+Here’s a simple example. Suppose you have a long computation near the start of a program’s
+execution. This long computation may not be needed until later on in the program’s
+execution—it’s actually tangential to the main point of the program, but it needs to get done
+eventually. In a single-threaded program, you have to wait for that computation to finish before
+the rest of the program can continue running. In a multithreaded system, you can put that
+computation into its own thread, enabling the rest of the program to continue running
+independently.
+Using threads in Java, you can create an applet so that it runs in its own thread, and it will happily
+run all by itself without interfering with any other part of the system. Using threads, you can
+have lots of applets running at once on the same page. Depending on how many you have, you
+may eventually exhaust the system so that all of them will run slower, but all of them will run
+independently.
+Even if you don’t have lots of applets, using threads in your applets is good Java programming
+practice. The general rule of thumb for well-behaved applets: whenever you have any bit of
+processing that is likely to continue for a long time (such as an animation loop, or a bit of code
+that takes a long time to execute), put it in a thread"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Congratulations on getting through Day 10! This day was a bit rough; you’ve learned a lot, and
+it all might seem overwhelming. You learned about a plethora of methods to use and override:
+start(), stop(), paint(), repaint(), run(), and update()—and you got a solid foundation in
+creating and using threads.
+After today, you’re over the worst hurdles in terms of understanding applets. Other than
+handling bitmap images, which you’ll learn about tomorrow, you now have the basic
+background to create just about any animation you want in Java."/>
+
+
+
+</LinearLayout>

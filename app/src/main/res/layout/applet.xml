@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Java Applet Basics"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Much of Java’s current popularity has come about because of Java-capable World Wide Web
+browsers and their support for applets: small programs that run inside a Web page and can be
+used to create dynamic, interactive Web designs. Applets, as I noted at the beginning of this
+book, are written in the Java language, and can be viewed in any browser that supports Java,
+including Sun’s HotJava and Netscape’s Navigator 2.0. Learning how to create applets is most
+likely the reason you bought this book, so let’s waste no more time.\n\nLast week, you focused on learning about the Java language itself, and most of the little programs
+you created were Java applications. This week, now that you have the basics down, you move
+on to creating and using applets, which includes a discussion of many of the classes in the
+standard Java class library.\n\nToday, you’ll start with the basics:\n\n■ A small review of differences between Java applets and applications\n
+■ Getting started with applets: the basics of how an applet works and how to create your\n
+own simple applets\n
+■ Including an applet on a Web page by using the APPLET tag, including the various\n
+features of that tag\n
+■ Passing parameters to applets\n"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="How Applets and Applications Are
+Different"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Although you explored the differences between Java applications and Java applets in the early
+part of this book, let’s review them.
+In short, Java applications are stand-alone Java programs that can be run by using just the Java
+interpreter, for example, from a command line. Most everything you’ve used up to this point
+in the book has been a Java application, albeit a simple one.
+Java applets, however, are run from inside a World Wide Web browser. A reference to an applet
+is embedded in a Web page using a special HTML tag. When a reader, using a Java-aware
+browser, loads a Web page with an applet in it, the browser downloads that applet from a Web
+server and executes it on the local system (the one the browser is running on).
+Because Java applets run inside the Java browser, they have access to the same capabilities that
+the browser has: sophisticated graphics, drawing, and image processing packages; user interface
+elements; networking; and event handling. Java applications can also take advantage of these
+features, but they don’t require them (you’ll learn how to create Java applications that use appletlike graphics and UI features on Day 14).\n\nThe advantages applets have over applications in terms of graphics and UI capabilities, however,
+are hampered by restrictions on what applets can do. Given the fact that Java applets can be
+downloaded from anywhere and run on a client’s system, restrictions are necessary to prevent
+an applet from causing system damage or security breaches. Without these restrictions in place,
+Java applets could be written to contain viruses or trojan horses (programs that seem friendly
+but do some sort of damage to the system), or be used to compromise the security of the system
+that runs them. The restrictions on what an applet can do include the following:\n\n■ Applets can’t read or write to the reader’s file system, except in specific directories
+(which are defined by the user through an access control list that, by default, is
+empty). Some browsers may not even allow an applet to read or write to the file
+system at all.\n■ Applets can’t usually communicate with a server other than the one that had originally
+stored the applet. (This may be configurable by the browser; however, you should not
+depend on having this behavior available.)\n■ Applets can’t run any programs on the reader’s system. For Unix systems, this includes
+forking a process\n■ Applets can’t load programs native to the local platform, including shared libraries
+such as DLLs\n\nIn addition, Java itself includes various forms of security and consistency checking in the Java
+compiler and interpreter to prevent unorthodox use of the language (you’ll learn more about this
+on Day 21). This combination of restrictions and security features make it more difficult for a
+rogue Java applet to do damage to the client’s system."/>
+
+
+
+
+
+
+</LinearLayout>

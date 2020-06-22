@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="More Animation, Images, and Sound"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Animations are fun and easy to do in Java, but there’s only so much you can do with the builtin Java methods for lines and fonts and colors. For really interesting animations, you have to
+provide your own images for each frame of the animation—and having sounds is nice, as well.
+Today, you’ll do more with animations, incorporating images and sounds into Java applets.\n\nSpecifically, you’ll explore the following topics:\n\n
+■ Using images—getting them from the server, loading them into Java, and displaying
+them in your applet\n■ Creating animations by using images, including an extensive example\n
+■ Using sounds—getting them and playing them at the appropriate times\n■ Sun’s Animator applet—an easy way to organize animations and sounds in Java\n
+■ Double-buffering—hardcore flicker avoidance"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Retrieving and Using Images"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Basic image handling in Java is easy. The Image class in java.awt provides abstract methods to
+represent common image behavior, and special methods defined in Applet and Graphics give
+you everything you need to load and display images in your applet as easily as drawing a rectangle.
+In this section, you’ll learn about how to get and draw images in your Java applets."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Getting Images"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="To display an image in your applet, you first must load that image over the net into your Java
+program. Images are stored as separate files from your Java class files, so you have to tell Java
+where to find them.
+The Applet class provides a method called getImage, which loads an image and automatically
+creates an instance of the Image class for you. To use it, all you have to do is import the
+java.awt.Image class, and then give getImage the URL of the image you want to load. There are
+two ways of doing the latter step:\n\n■ The getImage method with a single argument (an object of type URL) retrieves the
+image at that URL.\n
+■ The getImage method with two arguments: the base URL (also a URL object) and a
+string representing the path or filename of the actual image (relative to the base).\n\nAlthough the first way may seem easier (just plug in the URL as a URL object), the second is more
+flexible. Remember, because you’re compiling Java files, if you include a hard-coded URL of an
+image and then move your files around to a different location, you have to recompile all your
+Java files.\nThe latter form, therefore, is usually the one to use. The Applet class also provides two methods
+that will help with the base URL argument to getImage:\n\n■ The getDocumentBase() method returns a URL object representing the directory of the
+HTML file that contains this applet. So, for example, if the HTML file is located at
+http://www.myserver.com/htmlfiles/javahtml/, getDocumentBase returns a URL
+pointing to that path.\n\n■ The getCodeBase() method returns a string representing the directory in which this
+applet is contained—which may or may not be the same directory as the HTML file,
+depending on whether the CODEBASE attribute in APPLET is set or not.\n\nWhether you use getDocumentBase() or getCodebase() depends on whether your images are
+relative to your HTML files or relative to your Java class files. Use whichever one applies better
+to your situation. Note that either of these methods is more flexible than hard-coding a URL
+or pathname into the getImage method; using either getDocumentBase or getCodeBase enables
+you to move your HTML files and applets around and Java can still find your images.\n\nHere are a few examples of getImage, to give you an idea of how to use it. This first call to getImage
+retrieves the file at that specific URL (“http://www.server.com/files/image.gif”). If any part
+of that URL changes, you have to recompile your Java applet to take the new path into account:\n\nImage img = getImage(\n
+ new URL(“http://www.server.com/files/image.gif”));\n\nIn the following form of getImage, the image.gif file is in the same directory as the HTML files
+that refer to this applet:\n\nImage img = getImage(getDocumentBase(), “image.gif”)
+\n\nIn this similar form, the file image.gif is in the same directory as the applet itself\n\nImage img = getImage(getCodeBase(), “image.gif”)\n\n
+If you have lots of image files, it’s common to put them into their own subdirectory. This form
+of getImage looks for the file image.gif in the directory images, which, in turn, is in the same
+directory as the Java applet:\n\nImage img = getImage(getCodeBase(), “images/image.gif”)\n\nIf Java can’t find the file you’ve indicated, getImage returns null. Your program will continue
+to run—you just won’t see that image on your screen when you try to draw it."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Three major topics were the focus of today’s lesson. First, you learned about using images in your
+applets—locating them, loading them, and using the drawImage method to display them, either
+at their normal size or scaled to different sizes. You also learned how to create animations using
+images.
+Secondly, you learned how to use sounds, which can be included in your applets any time you
+need them—at specific moments, or as background sounds that can be repeated while the applet
+executes. You learned how to locate, load, and play sounds both using the play() and the
+getAudioClip() methods.
+Finally, you learned about double-buffering, a technique that enables you virtually to eliminate
+flicker in animations, at some expense of animation efficiency and speed. Using images and
+graphics contexts, you can create an offscreen buffer to draw to, the result of which is then
+displayed to the screen at the last possible moment."/>
+</LinearLayout>

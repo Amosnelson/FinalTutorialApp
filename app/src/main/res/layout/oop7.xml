@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textViewjj16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Analysis"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="The contents of the main() method are all going to look very new to you, so let’s go through
+it line by line so that you at least have a basic idea of what it does (you’ll get details about
+the specifics of all of this tomorrow and the day after)." />
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="The first line declares the main() method. The main() method always looks like this; you’ll learn
+the specifics of each part later this week"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+       android:text="Line 2, Motorcycle m = new Motorcycle(), creates a new instance of the Motorcycle class and
+stores a reference to it in the variable m. Remember, you don’t usually operate directly on classes
+in your Java programs; instead, you create objects from those classes and then modify and call
+methods in those objects"/>
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Lines 3 and 4 set the instance variables for this motorcycle object: the make is now a Yamaha RZ350
+(a very pretty motorcycle from the mid-1980s), and the color is yellow."
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textViewl49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lines 5 and 6 call the showAtts() method, defined in your motorcycle object. (Actually, only
+6 does; 5 just prints a message that you’re about to call this method.) The new motorcycle object
+then prints out the values of its instance variables—the make and color as you set in the previous
+lines—and shows that the engine is off"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textViefwl49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Line 7 prints a divider line to the screen; this is just for prettier output.
+\n\nLine 9 calls the startEngine() method in the motorcycle object to start the engine. The engine
+should now be on.
+\n\nLine 12 prints the values of the instance variables again. This time, the report should say the
+engine is now on.
+\n\nLine 15 tries to start the engine again, just for fun. Because the engine is already on, this should
+print the error message."
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textVidewjj16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Inheritance, Interfaces, and Packages"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewle49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Now that you have a basic grasp of classes, objects, methods, variables, and how to put it all
+together in a Java program, it’s time to confuse you again. Inheritance, interfaces, and packages
+are all mechanisms for organizing classes and class behaviors. The Java class libraries use all these
+concepts, and the best class libraries you write for your own programs will also use these concepts"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textVidewjjf16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Inheritance"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewleg49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Inheritance is one of the most crucial concepts in object-oriented programming, and it has a very
+        direct effect on how you design and write your Java classes. Inheritance is a powerful mechanism
+        that means when you write a class you only have to specify how that class is different from some
+        other class, while also giving you dynamic access to the information contained in those other
+        classes."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewjjf16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViefw48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="With inheritance, all classes—those you write, those from other class libraries that you use,
+            and those from the standard utility classes as well—are arranged in a strict hierarchy (see
+            Figure 2.2)" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textiView49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Each class has a superclass (the class above it in the hierarchy), and each class can have one or
+more subclasses (classes below that class in the hierarchy). Classes further down in the hierarchy
+are said to inherit from classes further up in the hierarchy."
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fig4"/>
+
+    <TextView
+        android:id="@+id/textjView49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Subclasses inherit all the methods and variables from their superclasses—that is, in any particular
+class, if the superclass defines behavior that your class needs, you don’t have to redefine it or copy
+that code from some other class. Your class automatically gets that behavior from its superclass,
+that superclass gets behavior from its superclass, and so on all the way up the hierarchy. Your
+class becomes a combination of all the features of the classes above it in the hie"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textVieow49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="At the top of the Java class hierarchy is the class Object; all classes inherit from this one superclass.
+Object is the most general class in the hierarchy; it defines behavior specific to all objects in the
+Java class hierarchy. Each class farther down in the hierarchy adds more information and
+becomes more tailored to a specific purpose. In this way, you can think of a class hierarchy as \n defining very abstract concepts at the top of the hierarchy and those ideas becoming more
+concrete the farther down the chain of superclasses you go.\n\n Most of the time when you write new Java classes, you’ll want to create a class that has all the
+information some other class has, plus some extra information. For example, you may want a
+version of a Button with its own built-in label. To get all the Button information, all you have
+to do is define your class to inherit from Button. Your class will automatically get all the behavior
+defined in Button (and in Button’s superclasses), so all you have to worry about are the things
+that make your class different from Button itself. This mechanism for defining new classes as the
+differences between them and their superclasses is called subclassing."
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewtjj16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView48t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Subclassing involves creating a new class that inherits from some other class in the class
+hierarchy. Using subclassing, you only need to define the differences between your class
+and its parent; the additional behavior is all available to your class through inheritance" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textjVieew49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="What if your class defines entirely new behavior, and isn’t really a subclass of another class? Your
+class can also inherit directly from Object, which still allows it to fit neatly into the Java class
+hierarchy. In fact, if you create a class definition that doesn’t indicate its superclass in the first
+line, Java automatically assumes you’re inheriting from Object. The Motorcycle class you created
+in the previous section inherited from Object."
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textVidewjej16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating a Class Hierarchy"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textjVieewf49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="If you’re creating a larger set of classes, it makes sense for your classes not only to inherit from
+the existing class hierarchy, but also to make up a hierarchy themselves. This may take some
+planning beforehand when you’re trying to figure out how to organize your Java code, but the
+advantages are significant once it’s done:"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textjVieefw49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="■ When you develop your classes in a hierarchy, you can factor out information common to multiple classes in superclasses, and then reuse that superclass’s information
+over and over again. Each subclass gets that common information from its superclass"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textjfVieew49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="■ Changing (or inserting) a class further up in the hierarchy automatically changes the
+behavior of the lower classes—no need to change or recompile any of the lower
+classes, because they get the new information through inheritance and not by copying
+any of the code"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textjVieew4f9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="For example, let’s go back to that Motorcycle class, and pretend you created a Java program to
+implement all the features of a motorcycle. It’s done, it works, and everything is fine. Now, your
+next task is to create a Java class called Car"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/texdtjVieew49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Car and Motorcycle have many similar features—both are vehicles driven by engines. Both
+ have transmissions and headlamps and speedometers. So, your first impulse may be to open up
+your Motorcycle class file and copy over a lot of the information you already defined into the
+new class Car."
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/ftexdtjVieew49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="A far better plan is to factor out the common information for Car and Motorcycle into a more
+general class hierarchy. This may be a lot of work just for the classes Motorcycle and Car, but once
+you add Bicycle, Scooter, Truck, and so on, having common behavior in a reuseable superclass
+significantly reduces the amount of work you have to do overall."
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/texdtjVdieew49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Let’s design a class hierarchy that might serve this purpose. Starting at the top is the class Object,
+which is the root of all Java classes. The most general class to which motorcycle and car both
+belong might be called Vehicle. A vehicle, generally, is defined as a thing that propels someone
+from one place to another. In the Vehicle class, you define only the behavior that enables
+someone to be propelled from point a to point b, and nothing more."
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/texdtjVdiefefw49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Below Vehicle? How about two classes: PersonPoweredVehicle and EnginePoweredVehicle?
+EnginePoweredVehicle is different from Vehicle because is has an engine, and the behaviors
+might include stopping and starting the engine, having certain amounts of gasoline and oil, and
+perhaps the speed or gear in which the engine is running. Person-powered vehicles have some
+kind of mechanism for translating people motion into vehicle motion—pedals, for example.
+Figure 2.3 shows what you have so far"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fig5"/>
+
+
+    <TextView
+        android:id="@+id/texdtjVdieefw49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Now, let’s become even more specific. With EnginePoweredVehicle, you might have several
+classes: Motorcycle, Car, Truck, and so on. Or you can factor out still more behavior and have
+intermediate classes for TwoWheeled and FourWheeled vehicles, with different behaviors for each
+(see Figure 2.4).\n\nFinally, with a subclass for the two-wheeled engine-powered vehicles you can finally have a class
+for motorcycles. Alternatively, you could additionally define scooters and mopeds, both of
+which are two-wheeled engine-powered vehicles but have different qualities from motorcycles\n\nWhere do qualities such as make or color come in? Wherever you want them to go—or, more
+usually, where they fit most naturally in the class hierarchy. You can define the make and color\non Vehicle, and all the subclasses will have those variables as well. The point to remember is that
+you have to define a feature or a behavior only once in the hierarchy; it’s automatically reused
+by each subclass"
+        android:layout_marginTop="10dp"/>
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/gif7"/>
+
+    <TextView
+        android:id="@+id/textVidewgjj16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="How Inheritance Works"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/texdtjVdieffefw49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="How does inheritance work? How is it that instances of one class can automatically get variables
+and methods from the classes further up in the hierarchy?"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/texdtjVdfieffefw49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="For instance variables, when you create a new instance of a class, you get a “slot” for each variable
+defined in the current class and for each variable defined in all its superclasses. In this way, all
+the classes combine to form a template for the current object and then each object fills in the
+information appropriate to its situation.\n\nMethods operate similarly: new objects have access to all the method names of its class and its
+superclasses, but method definitions are chosen dynamically when a method is called. That is,
+if you call a method on a particular object, Java first checks the object’s class for the definition
+of that method. If it’s not defined in the object’s class, it looks in that class’s superclass, and so
+on up the chain until the method definition is found (see Figure 2.5).\n\nThings get complicated when a subclass defines a method that has the same signature (name and
+number and type of arguments) as a method defined in a superclass. In this case, the method
+definition that is found first (starting at the bottom and working upward toward the top of the
+hierarchy) is the one that is actually executed. Because of this, you can purposefully define a
+method in a subclass that has the same signature as a method in a superclass, which then “hides”
+the superclass’s method. This is called overriding a method. You’ll learn all about methods on
+Day 7."
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gif1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewjjd16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textdView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Overriding a method is creating a method in a subclass that has the same signature (name,
+number and type of arguments) as a method in a superclass. That new method then hides
+the superclass’s method (see Figure 2.6)." />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gif2"/>
+
+    <TextView
+        android:id="@+id/textVidewdj16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Single and Multiple Inheritance"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textdVifew48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Java’s form of inheritance, as you learned in the previous sections, is called single inheritance.
+Single inheritance means that each Java class can have only one superclass (although any given
+superclass can have multiple subclasses).\n\nIn other object-oriented programming languages, such as C++ and Smalltalk, classes can have
+more than one superclass, and they inherit combined variables and methods from all those
+classes. This is called multiple inheritance. Multiple inheritance can provide enormous power
+in terms of being able to create classes that factor just about all imaginable behavior, but it can
+also significantly complicate class definitions and the code to produce them. Java makes
+inheritance simpler by being only singly inherited." />
+
+    <TextView
+        android:id="@+id/textVidfewdj16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Interfaces and Packages"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textdVifdew48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Java has two remaining concepts to discuss here: packages and interfaces. Both are advanced
+topics for implementing and designing groups of classes and class behavior. You’ll learn about
+both interfaces and packages on Day 16, but they are worth at least introducing here.\n\nRecall that Java classes have only a single superclass, and they inherit variables and methods from
+that superclass and all its superclasses. Although single inheritance makes the relationship
+between classes and the functionality those classes implement easy to understand and to design,
+it can also be somewhat restricting—in particular, when you have similar behavior that needs
+to be duplicated across different “branches” of the class hierarchy. Java solves this problem of
+shared behavior by using the concept of interfaces" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textdViewjj16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/texddView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="An interface is a collection of method names, without actual definitions, that indicate that
+a class has a set of behaviors in addition to the behaviors the class gets from its superclasses." />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/texdVdiew48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Although a single Java class can have only one superclass (due to single inheritance), that class
+can also implement any number of interfaces. By implementing an interface, a class provides
+method implementations (definitions) for the method names defined by the interface. If two
+very disparate classes implement the same interface, they can both respond to the same method
+calls (as defined by that interface), although what each class actually does in response to those
+method calls may be very different." />
+
+    <TextView
+        android:id="@+id/texdView48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="You don’t need to know very much about interfaces right now. You’ll learn more as the book
+progresses, so if all this is very confusing, don’t panic!
+The final new Java concept for today is that of packages" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textdVimewjj16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/texddViewfm48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Packages in Java are a way of grouping together related classes and interfaces. Packages
+enable modular groups of classes to be available only if they are needed and eliminate
+potential conflicts between class names in different groups of classes." />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/texddVieffwm48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="You’ll learn all about packages, including how to create and use them, in Week 3. For now, there
+are only a few things you need to know:\n\n■ The class libraries in the Java Developer’s Kit are contained in a package called java.
+The classes in the java package are guaranteed to be available in any Java implementation, and are the only classes guaranteed to be available across different implementations. The java package itself contains other packages for classes that define the
+language itself, the input and output classes, some basic networking, and the window
+toolkit functions. Classes in other packages (for example, classes in the sun or netscape
+packages) may be available only in specific implementations\n\n■ By default, your Java classes have access to only the classes in java.lang (the base
+language package inside the java package). To use classes from any other package, you
+have to either refer to them explicitly by package name or import them in your source
+file.\n\n■ To refer to a class within a package, list all the packages that class is contained in and
+the class name, all separated by periods (.). For example, take the Color class, which is
+contained in the awt package (awt stands for Abstract Windowing Toolkit). The awt
+package, in turn, is inside the java package. To refer to the Color class in your program, you use the notation java.awt.Color." />
+
+
+
+
+
+    <TextView
+        android:id="@+id/texdtVidewjj16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating a Subclass"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/texdfdViewfm48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="To finish up today, let’s create a class that is a subclass of another class and override some
+methods. You’ll also get a basic feel for how packages work in this example.\n\nProbably the most typical instance of creating a subclass, at least when you first start
+programming in Java, is in creating an applet. All applets are subclasses of the class Applet (which
+is part of the java.applet package). By creating a subclass of Applet, you automatically get all
+the behavior from the window toolkit and the layout classes that enables your applet to be drawn
+in the right place on the page and to interact with system operations, such as keypresses and
+mouse clicks.\n\nIn this example, you’ll create an applet similar to the Hello World applet from yesterday, but
+one that draws the Hello string in a larger font and a different color. To start this example, let’s
+first construct the class definition itself. Remember the HTML and classes directories you
+created yesterday? Let’s go back to those, go back to your text editor, and enter the following class
+definition:
+\n\npublic class HelloAgainApplet extends java.applet.Applet {\n\n
+}\n\nHere, you’re creating a class called HelloAgainApplet. Note the part that says extends
+java.applet.Applet—that’s the part that says your applet class is a subclass of the Applet class.\nNote that because the Applet class is contained in the java.applet package, you don’t have
+automatic access to that class, and you have to refer to it explicitly by package and class name.\nThe other part of this class definition is the public keyword. Public means that your class is
+available to the Java system at large once it is loaded. Most of the time you need to make a class
+public only if you want it to be visible to all the other classes in your Java program; but applets,
+in particular, must be declared to be public. (You’ll learn more about public classes in Week 3.)\nA class definition with nothing in it doesn’t really have much of a point; without adding or
+overriding any of its superclasses’ variables or methods, there’s no point to creating a subclass
+at all. Let’s add some information to this class to make it different from its superclass.\nFirst, add an instance variable to contain a Font object:\nFont f = new Font(“TimesRoman”,Font.BOLD,36);\n\nThe f instance variable now contains a new instance of the class Font, part of the java.awt
+package. This particular font object is a Times Roman font, boldface, 36 points high. In the
+previous Hello World applet, the font used for the text was the default font: 12 point Times
+Roman. Using a font object, you can change the font of the text you draw in your applet.\nBy creating an instance variable to hold this font object, you make it available to all the methods
+in your class. Now let’s create a method that uses it.\n\nWhen you write applets, there are several “standard” methods defined in the applet superclasses
+that you will commonly override in your applet class. These include methods to initialize the
+applet, to start it running, to handle operations such as mouse movements or mouse clicks, or
+to clean up when the applet stops running. One of those standard methods is the paint()
+method, which actually displays your applet on screen. The default definition of paint() doesn’t
+do anything—it’s an empty method. By overriding paint(), you tell the applet just what to draw
+on the screen. Here’s a definition of paint():
+\n\n" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="public void paint(Graphics g) {\n\n
+ g.setFont(f);\n
+ g.setColor(Color.red);\n
+ g.drawString(“Hello again!”, 5, 25);\n
+}\n\n\nThere are two things to know about the paint() method. First, note that this method is declared
+public, just as the applet itself was. The paint() method is actually public for a different
+reason—because the method it’s overriding is also public. If you try to override a method in your
+own class that’s public in a superclass, you get a compiler error, so the public is required.\n\nSecondly, note that the paint() method takes a single argument: an instance of the Graphics
+class. The Graphics class provides platform-independent behavior for rendering fonts, colors,
+and basic drawing operations. You’ll learn a lot more about the Graphics class in Week 2, when
+you create more extensive applets.\n\nInside your paint() method, you’ve done three things:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="■ You’ve told the graphics object that the default drawing font will be the one contained
+in the instance variable f.\n\n■ You’ve told the graphics object that the default color is an instance of the Color class
+for the color red.\n\n■ Finally, you’ve drawn your “Hello Again!” string onto the screen itself, at the x and y
+positions of 5 and 25. The string will be rendered in the default font and color.\n\nFor an applet this simple, this is all you need to do. Here’s what the applet looks like so far:
+\n\npublic class HelloAgainApplet extends java.applet.Applet {\n
+ Font f = new Font(“TimesRoman”,Font.BOLD,36);\n
+ public void paint(Graphics g) {\n
+ g.setFont(f);\n
+ g.setColor(Color.red);\n
+ g.drawString(“Hello again!”, 5, 50);\n
+ }\n
+}"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="If you’ve been paying attention, you’ll notice something is wrong with this example up to this
+point. If you don’t know what it is, try saving this file (remember, save it to the same name as
+the class: HelloAgainApplet.java) and compiling it using the Java compiler. You should get a
+bunch of errors similar to this one:\n\nHelloAgainApplet.java:7: Class Graphics not found in type declaration.\n\n Why are you getting these errors? Because the classes you’re referring to are part of a package.
+Remember that the only package you have access to automatically is java.lang. You referred to
+the Applet class in the first line of the class definition by referring to its full package name
+(java.applet.Applet). Further on in the program, however, you referred to all kinds of other
+classes as if they were already available.\n\n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="There are two ways to solve this problem: refer to all external classes by full package name or
+import the appropriate class or package at the beginning of your class file. Which one you choose
+to do is mostly a matter of choice, although if you find yourself referring to a class in another
+package lots of times, you may want to import it to cut down on the amount of typing.\n\nIn this example, you’ll import the classes you need. There are three of them: Graphics, Font, and
+Color. All three are part of the java.awt package. Here are the lines to import these classes. These
+lines go at the top of your program, before the actual class definition:\n\nNow, with the proper classes imported into your program, HelloAgainApplet should compile
+cleanly to a class file. To test it, create an HTML file with the tag as you did yesterday.
+Here’s an HTML file to use:"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/htmlll"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="For this HTML example, your Java class file is in the same directory as this HTML file. Save
+the file to HelloAgainApplet.html and fire up your Java-aware browser or the Java applet viewer.
+Figure 2.7 shows the result you should be getting (the Hello Again string is red)."></TextView>
+
+
+
+
+    <TextView
+        android:id="@+id/textVidewjj16tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="If this is your first encounter with object-oriented programming, a lot of the information in this
+chapter is going to seem really theoretical and overwhelming. Fear not—the further along in this
+book you get, and the more Java applications you create, the easier it is to understand.\n\nOne of the biggest hurdles of object-oriented programming is not necessarily the concepts, it’s
+their names. OOP has lots of jargon surrounding it. To summarize today’s material, here’s a
+glossary of terms and concepts you learned today:\n\nClass: A template for an object, which contains variables and methods representing
+behavior and attributes. Classes can inherit variables and methods from other classes.\n\nObject: A concrete instance of some class. Multiple objects that are instances of the
+same class have access to the same methods, but often have different values for their
+instance variables.\n\nInstance: The same thing as an object; each object is an instance of some class.
+Superclass: A class further up in the inheritance hierarchy than its child, the subclass.
+Subclass: A class lower in the inheritance hierarchy than its parent, the superclass.
+When you create a new class, that’s often called subclassing.
+Instance method: A method defined in a class, which operates on an instance of that
+class. Instance methods are usually called just methods.\nClass method: A method defined in a class, which can operate on the class itself or on
+any object.
+Instance variable: A variable that is owned by an individual instance and whose value is
+stored in the instance.
+Class variable: A variable that is owned by the class and all its instances as a whole, and
+is stored in the class.
+Interface: A collection of abstract behavior specifications that individual classes can
+then implement.
+Package: A collection of classes and interfaces. Classes from packages other than
+java.lang must be explicitly imported or referred to by full package name."
+        android:layout_marginBottom="50dp"/>
+
+
+
+
+
+
+</LinearLayout>

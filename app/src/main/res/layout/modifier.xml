@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Modifiers"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Once you begin to program Java for a while, you’ll discover that making all your classes,
+methods, and variables public can become quite annoying. The larger your program becomes,
+and the more you reuse your classes for new projects, the more you will want some sort of control
+over their visibility. One of the large-scale solutions to this problem, packages, must wait until
+tomorrow, but today you’ll explore what you can do within a class.\n\nToday, you’ll learn how to create and use the following:\n\n■ Methods and variables that control their access by other classes\n
+■ Class variables and methods\n
+■ Constant variables, classes that cannot be subclassed, and methods that cannot be
+overridden\n
+■ Abstract classes and methods\n\nThere is a long and varied list of modifiers. The order of modifiers is irrelevant to their
+meaning—your order can vary and is really a matter of taste. Pick a style and then be consistent
+with it throughout all your classes. Here is the recommended order:\n\n access static abstract synchronized unusual final native\n\nwhere  access can be public, protected, or private, and unusual includes volatile and
+transient.\n\nAll the modifiers are essentially optional; none have to appear in a declaration. Good style
+suggests adding as many as are needed to best describe the intended use of, and restrictions on,
+what you’re declaring. In some special situations (inside an interface, for example, as described
+tomorrow), certain modifiers are implicitly defined for you, and you needn’t type them—they
+will be assumed to be there.\nThe synchronized modifier is covered on Day 18; it has to do with multithreaded methods. The
+native modifier is covered on Day 20; it specifies that a method is implemented in the native
+language of your computer (usually C), rather than in Java. How access modifiers apply to
+classes is covered tomorrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Method and Variable Access Control"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Access control is about controlling visibility. When a method or variable is visible to another
+class, its methods can reference (call or modify) that method or variable. To “protect” a method
+or variable from such references, you use the four levels of visibility described in the next
+sections. Each, in turn, is more restrictive, and thus provides more protection than the one
+before it.\n\n"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="The Four P’s of Protection"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Learning your four P’s (public, package, protected, and private) comes down to understanding
+the fundamental relationships that a method or variable within a class can have to the other
+classes in the system."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="public"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Because any class is an island unto itself, the first of these relationships builds on the distinction
+between the inside and the outside of the class. Any method or variable is visible to the class in
+which it is defined, but what if you want to make it visible to all the classes outside this class?
+The answer is obvious: simply declare the method or variable to have public access. Almost every
+method and variable defined in the rest of this book has been declared, for simplicity’s sake,
+public. When you use any of the examples provided in your own code, you’ll probably decide
+to restrict this access further. Because you’re just learning now, it’s not a bad idea to begin with
+the widest possible access you can imagine and then narrow it down as you gain design
+experience, until the access that each of your variables and methods should have becomes second
+nature\n\nA variable or method with public access has the widest possible visibility. Anyone can see it.
+Anyone can use it. Of course, this may not always be what you want—which brings us to the
+next level of protection."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="package"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="In C, there is the notion of hiding a name so that only the functions within a given source file
+can see it. In Java, source files are replaced by the more explicit notion of packages, which can
+group classes (you learn about these tomorrow). For now, all you need to know is that the
+relationship you want to support is of a class to its fellow implementors of one piece of a system,
+library, or program (or to any other grouping of related classes). This defines the next level of
+increased protection and narrowed visibility.\n\nDue to an idiosyncrasy of the Java language, this next level of access has no precise name. It is
+indicated by the lack of any access modifier in a declaration. Historically, it has been called
+various suggestive names, including “friendly” and “package.” The latter usage seems most
+appropriate and is the one used here. Perhaps in a later release of the system, it will be possible
+to say package explicitly, but for now it is simply the default protection when none has been
+specified"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="protected"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="The third relationship is between a class and its present and future subclasses. These subclasses
+are much closer to a parent class than to any other “outside” classes for the following reasons:\n\n■ Subclasses are usually more intimately aware of the internals of a parent class.\n
+■ Subclasses are often written by you or by someone to whom you’ve given your source
+code.\n■ Subclasses frequently need to modify or enhance the representation of the data within
+a parent class\n\nNo one else is allowed the privilege of this level of access; they must be content with the public
+face that the class presents.
+To support the level of intimacy reserved for subclasses, modern programming languages have
+invented an intermediate level of access between the previous two levels and full privacy. This
+level gives more protection and narrows visibility still further, but still allows subclasses full
+access. In Java, this level of protection is called, appropriately enough, protected"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="private"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="The final relationship comes full circle, back to the distinction between the inside and outside
+of the class. private is the most narrowly visible, highest level of protection that you can get—
+the diametric opposite of public. private methods and variables cannot be seen by any class
+other than the one in which they are defined:\n\nThis may seem extremely restrictive, but it is, in fact, a commonly used level of protection. Any
+private data, internal state, or representations unique to your implementation—anything that
+shouldn’t be directly shared with subclasses—is private. Remember that an an object’s primary
+job is to encapsulate its data—to hide it from the world’s sight and limit its manipulation. The
+best way to do that is to make as much data as private as possible. Your methods can always be
+less restrictive, as you’ll see below, but keeping a tight rein on your internal representation is
+important. It separates design from implementation, minimizes the amount of information one
+class needs to know about another to get its job done, and reduces the extent of the code changes
+you need when your representation changes.\n\n"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Today, you learned how variables and methods can control their visibility and access by other
+classes via the four P’s of protection: public, package, protected, and private. You also learned
+that, although instance variables are most often declared private, declaring accessor methods
+allows you to control the reading and writing of them separately. Protection levels allow you,
+for example, to separate cleanly your public abstractions from their concrete representations.
+You also learned how to create class variables and methods, which are associated with the class
+itself, and how to declare final variables, methods, and classes to represent constants, fast or
+secure methods, and classes, respectively.
+Finally, you discovered how to declare and use abstract classes, which cannot be instantiated,
+and abstract methods, which have no implementation and must be overridden in subclasses.
+Together, they provide a template for subclasses to fill in and act as a variant of the powerful
+interfaces of Java that you’ll study tomorrow."/>
+
+</LinearLayout>

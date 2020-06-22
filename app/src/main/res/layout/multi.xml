@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Multithreading"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Today, you’ll learn more about the threads mentioned briefly in Week 2:\n\n■ How to “think multithreaded”\n
+■ How to protect your methods and variables from unintended thread conflicts\n
+■ How to create, start, and stop threads and threaded classes\n
+■ How the scheduler works in Java\n\nFirst, let’s begin by motivating the need for threads.
+Threads are a relatively recent invention in the computer science world. Although processes,
+their larger parent, have been around for decades, threads have only recently been accepted into
+the mainstream. What’s odd about this is that they are very valuable, and programs written with
+them are noticeably better, even to the casual user. In fact, some of the best individual, Herculean
+efforts over the years have involved implementing a threads-like facility by hand to give a
+program a more friendly feel to its users.
+Imagine that you’re using your favorite text editor on a large file. When it starts up, does it need
+to examine the entire file before it lets you edit? Does it need to make a copy of the file? If the
+file is huge, this can be a nightmare. Wouldn’t it be nicer for it to show you the first page, enabling
+you to begin editing, and somehow (in the background) complete the slower tasks necessary for
+initialization? Threads allow exactly this kind of within-the-program parallelism.
+Perhaps the best example of threading (or lack of it) is a WWW browser. Can your browser
+download an indefinite number of files and Web pages at once while still enabling you to
+continue browsing? While these pages are downloading, can your browser download all the
+pictures, sounds, and so forth in parallel, interleaving the fast and slow download times of
+multiple Internet servers? HotJava can do all of these things—and more—by using the builtin threading of the Java language"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Thinking Multithreaded"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Getting used to threads takes a little while and a new way of thinking. Rather than imagining
+that you always know exactly what’s happening when you look at a method you’ve written, you
+have to ask yourself some additional questions. What will happen if more than one thread calls\ninto this method at the same time? Do you need to protect it in some way? What about your
+class as a whole? Are you assuming that only one of its methods is running at the same time?
+Often you make such assumptions, and a local instance variable will be messed up as a result.
+Let’s make a few mistakes and then try to correct them. First, the simplest case:\n\npublic class ThreadCounter {\n
+ int crucialValue;\n
+ public void countMe() {\n
+ crucialValue += 1;\n
+ }\n
+ public int howMany() {\n
+ return crucialValue;\n
+ }\n
+}\n\nThis code suffers from the most pure form of the “synchronization problem:” the += takes more
+than one step, and you may miscount the number of threads as a result. (Don’t worry about how
+threads are created yet, just imagine that a whole bunch of them are able to call countMe(), at
+once, at slightly different times.) Java allows you to fix this:\n\n
+public class SafeThreadCounter {\n
+ int crucialValue;\n
+ public synchronized void countMe() {\n
+ crucialValue += 1;\n
+ }\n
+ public int howMany() {\n
+ return crucialValue;\n
+ }\n
+}\n\nThe synchronized keyword tells Java to make the block of code in the method thread safe. Only
+one thread will be allowed inside this method at once, and others have to wait until the currently
+running thread is finished with it before they can begin running it. This implies that
+synchronizing a large, long-running method is almost always a bad idea. All your threads would
+end up stuck at this bottleneck, waiting in single file to get their turn at this one slow method.
+It’s even worse than you might think for most unsynchronized variables. Because the compiler
+can keep them around in registers during computations, and a thread’s registers can’t be seen
+by other threads (especially if they’re on another processor in a true multiprocessor computer),
+a variable can be updated in such a way that no possible order of thread updates could have
+produced the result. This is completely incomprehensible to the programmer. To avoid this
+bizarre case, you can label a variable volatile, meaning that you know it will be updated
+asynchronously by multiprocessor-like threads. Java then loads and stores it each time it’s
+needed and does not use registers."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Today, you learned that parallelism is desirable and powerful, but introduces many new
+problems—methods and variables now need to be protected from thread conflicts—that can
+lead to chaos if not carefully controlled.
+By “thinking multithreaded,” you can detect the places in your programs that require
+synchronized statements (or modifiers) to make them thread-safe. A series of Point examples
+demonstrated the various levels of safety you can achieve and showed how subclasses of Thread,
+or classes that implement the Runnable interface, are created and run() to generate multithreaded
+programs.
+You also learned how to yield(), how to start(), stop(), suspend(), and resume() your threads,
+and how to catch ThreadDeath whenever it happens.\nFinally, you learned about preemptive and non-preemptive scheduling, both with and without
+priorities, and how to test your Java system to see which of them your scheduler is using.
+This wraps up the description of threads. You now know enough to write the most complex of
+programs: multithreaded ones. As you get more comfortable with threads, you may begin to use
+the ThreadGroup class or to use the enumeration methods of Thread to get your hands on all the
+threads in the system and manipulate them. Don’t be afraid to experiment; you can’t
+permanently break anything, and you learn only by trying."/>
+</LinearLayout>

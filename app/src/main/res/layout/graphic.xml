@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Graphics, Fonts, and Color"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Now you have a basic understanding of how applets work. For the remainder of this week you’ll
+cover the sorts of things you can do with applets with the built-in Java class libraries, and how
+you can combine them to produce interesting effects. You’ll start today with how to draw to the
+screen—that is, how to produce lines and shapes with the built-in graphics primitive, how to
+print text using fonts, and how to use and modify color in your applets. Today you’ll learn,
+specifically:\n\n■ How the graphics system works in Java: the Graphics class, the coordinate system used
+to draw to the screen, and how applets paint and repaint\n■ Using the Java graphics primitives, including drawing and filling lines, rectangles,
+ovals, and arcs\n■ Creating and using fonts, including how to draw characters and strings and how to
+find out the metrics of a given font for better layout\n■ All about color in Java, including the Color class and how to set the foreground
+(drawing) and background color for your applet \n\n"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="The Graphics Class"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="With Java’s graphics capabilities, you can draw lines, shapes, characters, and images to the screen
+inside your applet. Most of the graphics operations in Java are methods defined in the Graphics
+class. You don’t have to create an instance of Graphics in order to draw something in your applet;
+in your applet’s paint() method (which you learned about yesterday), you are given a Graphics
+object. By drawing on that object, you draw onto your applet and the results appear on screen.
+The Graphics class is part of the java.awt package, so if your applet does any painting (as it usually
+will), make sure you import that class at the beginning of your Java file:\n\nimport java.awt.Graphics;\n\npublic class MyClass extended java.applet.Applet {
+\n...\n\n
+}"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="A Single Color Example"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Listing 9.4 shows the code for an applet that fills the applet’s drawing area with square boxes,
+each of which has a randomly chosen color in it. It’s written so that it can handle any size of applet
+and automatically fill the area with the right number of boxes."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cc1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Analysis"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="The two for loops are the heart of this example; the first one draws the rows, and the second
+draws the individual boxes within the row. When a box is drawn, the random color is\ncalculated first, and then the box is drawn. A black outline is drawn around each box, because
+some of them tend to blend into the background of the applet."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="You present something on the screen by painting inside your applet: shapes, graphics, text, or
+images. Today, you learned the basics of how to paint, including using the graphics primitives
+to draw rudimentary shapes, using fonts and font metrics to draw text, and using Color objects
+to change the color of what you’re drawing on the screen. It’s this foundation in painting that
+enables you to do animation inside an applet (which basically involves just painting repeatedly
+to the screen) and to work with images. These are topics you’ll learn about tomorrow."/>
+
+
+
+
+
+
+
+</LinearLayout>

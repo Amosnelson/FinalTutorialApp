@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">FinalTutorialApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Enter Your Name Field-->
+    <string name="enter_your_name">Enter Your Name</string>
+
+    <!--Question 1-->
+    <string name="num_question_1">Question 1</string>
+    <string name="question_1">What operator do you use to call an objects constructor method and create a new object?</string>
+
+    <!--Answers to the question 1-->
+    <string name="plus">+</string>
+    <string name="news">new</string>
+    <string name="ins">instanceOf</string>
+    <string name="minus">-</string>
+
+
+    <!--Question 2-->
+    <string name="num_question_2">Question 2</string>
+    <string name="question_2">What kinds of methods apply to all objects of a class rather than an individual object?</string>
+
+    <!--Answers to the question 2-->
+    <string name="answer1">Universal methods</string>
+    <string name="answer2">Instance methods</string>
+    <string name="answer3">Class methods</string>
+
+    <!--Question 3-->
+    <string name="num_question_3">Question 3</string>
+    <string name="question_3">What is true about a final class?</string>
+
+    <!--Answers to the question 3-->
+    <string name="publ">class declard final is a final class.</string>
+    <string name="sensitive">Final classes are created so the methods implemented by that class cannot be overridden.</string>
+    <string name="confidential">It cant be inherited.</string>
+    <string name="_private">All of the above.</string>
+
+    <!--Question 4-->
+    <string name="question_4"> What is function overloading?</string>
+    <string name="num_question_4">Question 4</string>
+
+    <!--Answers to the question 4-->
+    <string name="managerial">Methods with same name but different parameters.</string>
+    <string name="physical">Methods with same name but different return types.</string>
+    <string name="logical"> Methods with same name, same parameter types but different parameter names.</string>
+    <string name="administrative"> None of the above.</string>
+
+    <!--Question 5-->
+    <string name="num_question_5">Question 5</string>
+    <string name="question_5">Which of the following is true about protected access modifier?</string>
+
+    <!--Answers to the question 5-->
+    <string name="answer_5_1"> Variables, methods and constructors which are declared protected can be accessed by any class.</string>
+    <string name="answer_5_2">Variables, methods and constructors which are declared protected can be accessed by any class lying in same package.</string>
+    <string name="answer_5_3">Variables, methods and constructors which are declared protected in the superclass can be accessed only by its child class.
+</string>
+    <string name="answer_5_4">None of the above.</string>
+
+    <!--Question 6-->
+    <string name="num_question_6">Question 6</string>
+    <string name="question_6">What is Deserialization?</string>
+
+    <!--Answers to the question 6-->
+    <string name="passive_attack">Deserialization is the process of restoring state of an object from a byte stream.</string>
+    <string name="active_attack">Serialization is the process of restoring state of an object from an object.</string>
+    <string name="close_in_attack">Both of the above.</string>
+    <string name="insider_attack">None of the above.</string>
+
+    <!--Question 7-->
+    <string name="num_question_7">Question 7</string>
+    <string name="Question_7"> - Under what conditions is an objects finalize() method invoked by the garbage collector?</string>
+
+    <!--Answers to the question 7-->
+    <string name="physical_security"> When it detects that the object has become unreachable.</string>
+    <string name="administrative_security">As soon as object is set as null.</string>
+    <string name="logical_security">At fixed intervalm it checks for null value.</string>
+    <string name="vulnerability"> None of the above.</string>
+
+    <!--Question 8-->
+    <string name="num_question_8">Question 8</string>
+    <string name="question_8">Which of the following is a thread safe?</string>
+
+    <!--Answers to the question 8-->
+    <string name="packet_capture">StringBuilder</string>
+    <string name="password_attack">StringBuffer</string>
+    <string name="dumpster_driving">Both of the above</string>
+    <string name="botnet">none of the above</string>
+
+
+    <!--Question 9-->
+    <string name="num_question_9">Question 9</string>
+    <string name="question_9">What is a class in java?</string>
+
+    <!--Answers to the question 9-->
+    <string name="datadiddling"> A class is a blue print from which individual objects are created. A class can contain fields and methods to describe the behavior of an object.</string>
+    <string name="datavdiddling">class is a special data type.</string>
+    <string name="datdiddlinlg">class is used to allocate memory to a data type.</string>
+    <string name="datdiddlling">none of the above.</string>
+    <!--Rest of the answers to question 9 to watch in the answer to question 8 above-->
+
+    <!--Question 10-->
+    <string name="num_question_10">Question 10</string>
+    <string name="question_10">What is the size of char variable?</string>
+
+    <!--Answers to the question 9-->
+    <string name="denial_of_servie">8 bit</string>
+    <string name="denial_of_sece">16 bit</string>
+    <string name="denial_of_srvie">32 bit</string>
+    <string name="denial_of_srvic">64 bit</string>
+    <!--Rest of the answers to question 10 to watch in the answer to question 8 above-->
+
+    <!--Button "End Test"-->
+    <string name="end_test">End test</string>
+
+    <!--Test Result-->
+    <string name="test_result_name">"Name: "</string>
+    <string name="test_result">Test Result</string>
+    <string name="test_result_score">"Score: "</string>
+
+
+</resources>

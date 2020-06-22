@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtclasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating Classes and Applications in Java"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="In just about every lesson up to this point you’ve been creating Java applications—writing
+classes, creating instance variables and methods, and running those applications to perform
+simple tasks. Also up to this point, you’ve focused either on the very broad (general objectoriented theory) or the very minute (arithmetic and other expressions). Today, you pull it all
+together and learn how and why to create classes by using the following basics:\n\n■ The parts of a class definition\n■ Declaring and using instance variables\n■ Defining and using methods\n■ Creating Java applications, including the main() method and how to pass arguments
+to a Java program from a command line\n\n"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Defining Classes"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Defining classes is pretty easy; you’ve seen how to do it a bunch of times in previous lessons. To
+define a class, use the class keyword and the name of the class:\n\nclass MyClassName {\n
+...
+}\n\nIf this class is a subclass of another class, use extends to indicate the superclass of this class:\n\nclass myClassName extends mySuperClassName {\n\n
+...
+}\n\nIf this class implements a specific interface, use implements to refer to that interface:\n\nclass MyRunnableClassName implements Runnable {
+...
+}\n\nBoth extends and implements are optional. You’ll learn about using and defining interfaces in
+Week 3.\n\n"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating Instance and Class Variables"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="A class definition with nothing in it is pretty dull; usually, when you create a class, you have
+something you want to add to make that class different from its superclasses. Inside each class
+definition are declarations and definitions for variables or methods or both—for the class and
+for each instance. In this section, you’ll learn all about instance and class variables; the next
+section talks about methods."
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Defining Instance Variables"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="On Day 3, you learned how to declare and initialize local variables—that is, variables inside
+method definitions. Instance variables, fortunately, are declared and defined in exactly the same
+way as local variables; the only difference is their location in the class definition. Instance
+variables are considered instance variables if they are declared outside a method definition.
+Customarily, however, most instance variables are defined just after the first line of the class
+definition. For example, Listing 6.1 shows a simple class definition for the class Bicycle, which
+inherits from the class PersonPoweredVehicle. This class definition contains four instance
+variables:\n\n■ bikeType: the kind of bicycle this bicycle is—for example, Mountain or Street\n
+■ chainGear, the number of gears in the front\n
+■ rearCogs, the number of minor gears on the rear axle\n
+■ currentGearFront and currentGearRear: the gears the bike is currently in, both front
+and rear\n\n"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/focus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Constants"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Constants are useful for setting global states in a method or object, or for giving meaningful
+names to object-wide values that will never change. In Java, you can create constants only for
+instance or class variables, not for local variables."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating Methods"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Methods, as you learned on Day 2, define an object’s behavior—what happens when that object
+is created and the various operations that object can perform during its lifetime. In this section,
+you’ll get a basic introduction to method definition and how methods work; tomorrow, you’ll
+go into more detail about advanced things you can do with methods."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Defining Methods"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Method definitions have four basic parts:\n\n■ The name of the method
+■ The type of object or base type this method returns\n
+■ A list of parameters\n
+■ The body of the method\nIn other languages, the name of the method (or function, subroutine, or procedure) is enough
+to distinguish it from other methods in the program. In Java, you can have different methods
+that have the same name but a different return type or argument list. This is called method
+overloading, and you’ll learn more about it tomorrow.
+Here’s what a basic method definition looks like:\n\nreturntype methodname (type1 arg1, type2 arg2, type3 arg3..) {\n
+ ...
+}\n\nThe returntype is the primitive type or class of the of the value this method returns. It can be
+one of the primitive types, a class name, or void if the method does not return a value at all.
+Note that if this method returns an array object, the array brackets can go either after the return
+type or after the parameter list; because the former way is considerably easier to read, it is used
+in the examples today (and throughout this book):
+\n\nint[] makeRange (int lower, int upper) {...}\n\nThe method’s parameter list is a set of variable declarations, separated by commas, inside
+parentheses. These parameters become local variables in the body of the method, whose values
+are the objects or values of primitives passed in when the method is called.
+Inside the body of the method you can have statements, expressions, method calls to other
+objects, conditionals, loops, and so on—everything you’ve learned about in the previous lessons.
+If your method has a real return type (that is, it has not been declared to return void), somewhere
+inside the body of the method you need to return a value. Use the return keyword to do this.
+Listing 6.2 shows an example of a class that defines a makeRange() method. makeRange() takes
+two integers—a lower bound and an upper bound—and creates an array that contains all the
+integers between those two boundaries (inclusive)."
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cla"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Today, you put together everything you’ve come across in the preceding days of this week about
+how to create Java classes and use them in Java applications. This included the following\n\n■ Instance and class variables, which hold the attributes of the class and its instances.
+You learned how to declare them, how they are different from regular local variables,
+and how to declare constants.\n■ Instance and class methods, which define a class’s behavior. You learned how to define
+methods, including the parts of a method’s signature, how to return values from a
+method, how arguments are passed in and out of methods, and the this keyword to
+refer to the current object\n
+■ Java applications—all about the main() method and how it works as well as how to
+pass arguments into a Java application from a command line."/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

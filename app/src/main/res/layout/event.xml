@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Managing Simple Events and Interactivity"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Java events are part of the Java AWT (Abstract Windowing Toolkit) package. An event is the
+way that the AWT communicates to you, as the programmer, and to other Java AWT
+components that something has happened. That something can be input from the user (mouse
+movements or clicks, keypresses), changes in the system environment (a window opening or
+closing, the window being scrolled up or down), or a host of other things that might, in some
+way, be interesting to the operation of the program.\n\nIn other words, whenever just about anything happens to a Java AWT component, including
+an applet, an event is generated. Some events are handled by the AWT or by the browser without
+your needing to do anything. paint() methods, for example, are generated and handled by the
+browser—all you have to do is tell the AWT what you want painted when it gets to your part
+of the window. Some events, however—for example, a mouse click inside the boundaries of
+your applet—you may need to know about. Writing your Java programs to handle these kinds
+of events enables you to get input from the user and have your applet change its behavior based
+on that input.\n\nToday, you’ll learn about managing simple events, including the following basics:\n\n■ Mouse clicks\n
+■ Mouse movements, including mouse dragging\n
+■ Keyboard actions\n\nYou’ll also learn about the handleEvent() method, which is the basis for collecting, handling,
+and passing on events of all kinds from your applet to other UI components in the window or
+in your applet itself. Tomorrow, you’ll learn how to combine events with the AWT to create a
+complete interface for your applet."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Mouse Clicks"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Let’s start with the most common event you might be interested in: mouse clicks. Mouse-click
+events occur when your user clicks the mouse somewhere in the body of your applet. You can
+intercept mouse clicks to do very simple things—for example, to toggle the sound on and off
+in your applet, to move to the next slide in a presentation, or to clear the screen and start over—
+or you can use mouse clicks in conjunction with mouse movements to perform more complex
+motions inside your applet."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="mouseDown and mouseUp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="When you click the mouse once, the AWT generates two events: a mouseDown event when the
+mouse button is pressed, and a mouseUp event when the button is released. Why two individual
+events for a single mouse action? Because you may want to do different things for the “down”
+and the “up.” For example, look at a pull-down menu. The mouseDown extends the menu, and
+the mouseUp selects an item (with mouseDrags between—but you’ll learn about that one later).
+If you have only one event for both actions (mouseUp and mouseDown), you cannot implement
+that sort of user interaction.\n\nHandling mouse events in your applet is easy—all you have to do is override the right method
+definition in your applet. That method will be called when that particular event occurs. Here’s
+an example of the method signature for a mouseDown event:\n\npublic boolean mouseDown(Event evt, int x, int y) {\n
+...\n
+}\n\nThe mouseDown() method (and the mouseUp() method as well) takes three parameters: the event
+itself and the x and y coordinates where the mouseDown or mouseUp event occurred.
+The event argument is an instance of the class Event. All system events generate an instance of
+the Event class, which contains information about where and when the event took place, the kind
+of event it is, and other information that you might want to know about this event. Sometimes
+having a handle to that event object is useful, as you’ll discover later on in this section.
+The x and the y coordinates of the event, as passed in through the x and y arguments, are
+particularly nice to know because you can use them to determine precisely where the mouse click
+took place.
+For example, here’s a simple method that prints out information about a mouseDown when it
+occurs:\n\npublic boolean mouseDown(Event evt, int x, int y) {n
+ System.out.println(“Mouse down at “ + x + “,” + y);\n
+ return true;\n
+}\n\nBy including this method in your applet, every time your user clicks the mouse inside your
+applet, this message will get printed.
+Note that this method, unlike the other system methods you’ve studied this far, returns a
+boolean value instead of not returning anything (void). This will become important tomorrow
+when you create user interfaces and then manage input to these interfaces; having an event
+handler return true or false determines whether a given UI component can intercept an event
+or whether it needs to pass it on to the enclosing component. The general rule is that if your
+method deals with the event, it should return true, which for the focus of today’s lesson is almost
+always the case.\nThe second half of the mouse click is the mouseUp() method, which is called when the mouse
+button is released. To handle a mouseUp event, add the mouseUp() method to your applet.\n\nmouseUp() looks just like mouseDown():\n
+public boolean mouseUp(Event evt, int x, int y) {\n
+ ....\n
+}\n\n"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Handling events in Java’s Abstract Windowing Toolkit (AWT) is easy. Most of the time, all you
+need to do is stick the right method in your applet code, and your applet intercepts and handles
+that method. Here are some of the basic events you can manage in this way:\n\n■ Mouse clicks—mouseUp() and mouseDown() methods for each part of a mouse click.\n
+■ Mouse movements—mouseMove() and mouseDrag() for mouse movement with the
+mouse button released and pressed, respectively, as well as mouseEnter() and
+mouseExit() for when the mouse enters and exits the applet area\n■ keyDown for when a key on the keyboard is pressed.\n\nAll events in the AWT generate an Event object; inside that object, you can find out information
+about the event, when it occurred, and its x and y coordinates (if applicable). You can also test
+that event to see whether a modifier key was pressed when the event occurred, by using the
+shiftDown(), controlDown(), and metaDown() methods.
+Finally, there is the handleEvent(), the “parent” of the individual event methods. The
+handleEvent() method is actually what the Java system calls to manage events; the default
+implementation calls the individual method events where necessary. To override how methods
+are managed in your applet, override handleEvent."/>
+
+
+
+
+
+</LinearLayout>

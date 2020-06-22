@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textViewjj16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="Behavior"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="A class’s behavior determines what instances of that class do when their internal state changes or when that instance is asked to do something by another class or object. Behavior is the way objects can do anything to themselves or have anything done to them. For example, to go back to the theoretical Motorcycle class, here are some behaviors that the Motorcycle class might have\n■ Start the engine\n■ Stop the engine\n■ Speed up\n■ Change gear\n■ Stall\nTo define an object’s behavior, you create methods, which look and behave just like functions in other languages, but are defined inside a class. Java does not have functions defined outside classes (as C++ does).\nMethods don’t always affect only a single object; objects communicate with each other using methods as well. A class or object can call methods in another class or object to communicate changes in the environment or to ask that object to change its state. Just as there are instance and class variables, there are also instance and class methods. Instance methods (which are so common they’re usually just called methods) apply and operate on an instance; class methods apply and operate on a class (or on other objects). You’ll learn more about class methods later on this week."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewjj16"
+        tools:visibility="visible" />
+
+    <TextView
+            android:id="@+id/textViewjj216"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="Creating a Class"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="\nUp to this point, today’s lesson has been pretty theoretical. In this section, you’ll create a working example of the Motorcycle class so that you can see how instance variables and methods are defined in a class. You’ll also create a Java application that creates a new instance of the Motorcycle class and shows its instance variables.\nReady? Let’s start with a basic class definition. Open up that editor and enter the following\nclass Motorcycle { \n}\n\nCongratulations! You’ve now created a class. Of course, it doesn’t do very much at the moment, but that’s a Java class at its very simplest. First, let’s create some instance variables for this class—three of them, to be specific. Just below the first line, add the following three lines:\nCongratulations! You’ve now created a class. Of course, it doesn’t do very much at the moment, but that’s a Java class at its very simplest. First, let’s create some instance variables for this class—three of them, to be specific. Just below the first line, add the following three lines:\nString make;\n String color;\n boolean engineState;\nHere, you’ve created three instance variables: two, make and color, can contain String objects (String is part of that standard class library mentioned earlier). The third, engineState, is a boolean that refers to whether the engine is off or on.\n\nNow let’s add some behavior (methods) to the class. There are all kinds of things a motorcycle can do, but to keep things short, let’s add just one method—a method that starts the engine. Add the following lines below the instance variables in your class definition: \nvoid startEngine() {\nif (engineState == true)\nSystem.out.println(“The engine is already on.”);\n else {\nengineState = true; \nSystem.out.println(“The engine is now on.”);  } }\n\nThe startEngine method tests to see whether the engine is already running (in the line engineState == true) and, if it is, merely prints a message to that effect. If the engine isn’t already running, it changes the state of the engine to true and then prints a message. With your methods and variables in place, save the program to a file called Motorcycle.java (remember, you should always name your Java files the same names as the class they define). Here’s what your program should look like so far:\n\n
+\nclass Motorcycle {\n
+ String make;\n
+ String color;\n
+ boolean engineState;\n
+ void startEngine() {\n
+ if (engineState == true)\n
+ System.out.println(“The engine is already on.”);\n
+ else {\n
+ engineState = true;\n
+ System.out.println(“The engine is now on.”);\n
+ }\n
+ }\n
+}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewjj216" />
+
+</LinearLayout>
+

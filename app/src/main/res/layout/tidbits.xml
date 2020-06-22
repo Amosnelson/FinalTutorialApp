@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Windows, Networking, and Other Tidbits"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Here you are on the last day of the second week, and you’re just about finished with applets and
+the AWT. With the information you’ll learn today, you can create a wide variety of applets and
+applications using Java. Next week’s lessons provide more of the advanced stuff that you’ll need
+if you start doing really serious work in Java\n\nToday, to finish up this week, there are three very different topics:\n\n■ Windows, menus, and dialog boxes—the last of the AWT classes that enable you to
+pop up real windows from applets, and to create stand-alone Java applications that
+have their own windows\n■ Networking—how to load new HTML files from an applet-capable browser, how to
+retrieve files from Web sites, and some basics on how to work with generic sockets in
+Java\n■ Extra tidbits—the smaller stuff that didn’t fit in anywhere else, but that might be
+useful to you as you write your Java applets and applications"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Congratulations! Take a deep breath—you’re finished with Week 2. This week has been full of
+useful information about creating applets and using the Java AWT classes to display, draw,
+animate, process input, and create fully fledged interfaces in your applets.
+Today, you finished exploring applets and the AWT by learning about three concepts.
+First, you learned about windows, frames, menus, and dialogs, which enable you to create a
+framework for your applets—or enable your Java applications to take advantage of applet
+features.
+Second, you head a brief introduction to Java networking through some of the classes in the
+java.net package. Applet networking includes things as simple as pointing the browser to
+another page from inside your applet, but can also include retrieving files from the Web by using\nstandard Web protocols (http, ftp, and so on). For more advanced networking capabilities, Java
+provides basic socket interfaces that can be used to implement many basic network-oriented
+applets—client-server interactions, chat sessions, and so on.
+Finally, you finished up with the tidbits—small features of the Java AWT and of applets that
+didn’t fit anywhere else, including showStatus(), producing information for your applet, and
+communicating between multiple applets on a single page."/>
+
+</LinearLayout>

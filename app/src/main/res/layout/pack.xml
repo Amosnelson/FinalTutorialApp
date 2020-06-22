@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Packages and Interfaces"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="When you examine a new language feature, you should ask yourself two questions:\n\n1. How can I use it to better organize the methods and classes of my Java program?
+\n\n2. How can I use it while writing the Java code in my methods?\n\nThe first is often called programming in the large, and the second, programming in the small.
+Bill Joy, a founder of Sun Microsystems, likes to say that Java feels like C when programming
+in the small and like Smalltalk when programming in the large. What he means by that is that
+Java is familiar and powerful like any C-like language while you’re coding, but has the
+extensibility and expressive power of a pure object-oriented language like Smalltalk while you’re
+designing.
+The separation of “designing” from “coding” was one of the most fundamental advances in
+programming in the past few decades, and object-oriented languages such as Java implement a
+strong form of this separation. The first part of this separation has already been described on
+previous days: when you develop a Java program, first you design the classes and decide on the
+relationships between these classes, and then you implement the Java code needed for each of
+the methods in your design. If you are careful enough with both these processes, you can change
+your mind about aspects of the design without affecting anything but small, local pieces of your
+Java code, and you can change the implementation of any method without affecting the rest of
+the design.
+As you begin to explore more advanced Java programming, however, you’ll find that this simple
+model becomes too limiting. Today, you’ll explore these limitations, for programming in the
+large and in the small, to motivate the need for packages and interfaces. Let’s start with packages.\n\n"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Packages"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Packages are Java’s way of doing large-scale design and organization. They are used both to
+categorize and group classes. Let’s explore why you might need to use packages."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Interfaces"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Interfaces, like the abstract classes and methods you saw yesterday, provide templates of behavior
+that other classes are expected to implement, but they are much more powerful. Let’s see why
+you might need such power."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Today, you learned how packages can be used to collect and categorize classes into meaningful
+groups. Packages are arranged in a hierarchy, which not only better organizes your programs,
+but allows you and the millions of Java programmers out on the Net to name and share their
+projects uniquely with one another.
+You also learned how to use packages, both your own and the many preexisting ones in the Java
+class library.
+You then discovered how to declare and use interfaces, a powerful mechanism for extending the
+traditional single-inheritance of Java’s classes and for separating the design inheritance from the
+implementation inheritance in your programs. Interfaces are often used to call shared methods
+when the exact class involved is not known. You’ll see further uses of interfaces tomorrow and
+the day after.
+Finally, packages and interfaces can be combined to provide useful abstractions, such as
+Enumeration, that appear simple yet are actually hiding almost all their (complex) implementation from their users. This is a powerful technique."/>
+
+</LinearLayout>

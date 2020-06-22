@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Arrays, Conditionals, and Loops"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Although you could write Java programs using what you’ve learned so far, those programs would
+be pretty dull. Much of the good stuff in Java or in any programming language results when you
+have arrays to store values in and control-flow constructs (loops and conditionals) to execute
+different bits of a program based on tests. Today, you’ll find out about the following\n\n■ Arrays, one of the most useful objects in Java, which enable you to collect objects into
+an easy-to-manage list\n\n■ Block statements, for grouping together related statements\n\n■ if and switch, for conditional tests\n\n■ for and while loops, for iteration or repeating a statement or statements multiple
+times\n"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Arrays"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Arrays in Java are different than they are in other languages. Arrays in Java are actual objects that
+can be passed around and treated just like other objects."/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slide_background"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:padding="16sp"
+            android:text="NEW TERM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Arrays are a way to store a list of items. Each element of the array holds an individual item,
+and you can place items into and remove items from those slots as you need to." />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Arrays can contain any type of value (base types or objects), but you can’t store different types
+in a single array. You can have an array of integers, or an array of strings, or an array of arrays,
+but you can’t have an array that contains, for example, both strings and integers.\n\nArrays can contain any type of value (base types or objects), but you can’t store different types
+in a single array. You can have an array of integers, or an array of strings, or an array of arrays,
+but you can’t have an array that contains, for example, both strings and integers.\n\n1. Declare a variable to hold the array.\n
+2. Create a new array object and assign it to the array variable.\n
+3. Store things in that array"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Arrays can contain any type of value (base types or objects), but you can’t store different types
+in a single array. You can have an array of integers, or an array of strings, or an array of arrays,
+but you can’t have an array that contains, for example, both strings and integers.\n\nArrays can contain any type of value (base types or objects), but you can’t store different types
+in a single array. You can have an array of integers, or an array of strings, or an array of arrays,
+but you can’t have an array that contains, for example, both strings and integers.\n\n1. Declare a variable to hold the array.\n
+2. Create a new array object and assign it to the array variable.\n
+3. Store things in that array"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Declaring Array Variables"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="The first step to creating an array is creating a variable that will hold the array, just as you would
+any other variable. Array variables indicate the type of object the array will hold (just as they do
+for any variable) and the name of the array, followed by empty brackets ([]). The following are
+all typical array variable declarations:\n\nString difficultWords[];\n
+Point hits[];\n
+int temps[];\n\nAn alternate method of defining an array variable is to put the brackets after the type instead of
+after the variable. They are equivalent, but this latter form is often much more readable. So, for
+example, these three declarations could be written like this:\n\n
+String[] difficultWords;\n
+Point[] hits;\n
+int[] temps;"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Creating Array Objects"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="The second step is to create an array object and assign it to that variable. There are two ways to
+do this:\n\n
+■ Using new\n
+■ Directly initializing the contents of that array\n\nThe first way is to use the new operator to create a new instance of an array:
+String[] names = new String[10];
+That line creates a new array of Strings with ten slots, or elements. When you create the new array
+object using new, you must indicate how many elements that array will hold.
+Array objects can contain primitive types such as integers or booleans, just as they can contain
+objects:
+int[] temps = new int[99];
+When you create an array object using new, all its elements are initialized for you (0 for numeric
+arrays, false for boolean, ‘\0’ for character arrays, and null for everything else). You can also
+create and initialize an array at the same time. Instead of using new to create the new array object,
+enclose the elements of the array inside braces, separated by commas:
+String[] chiles = { “jalapeno”, “anaheim”, “serrano,”
+ “habanero,” “thai” };
+Each of the elements inside the braces must be of the same type and must be the same type as
+the variable that holds that array. An array the size of the number of elements you’ve included
+will be automatically created for you. This example creates an array of String objects named
+chiles that contains five elements."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Accessing Array Elements"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Once you have an array with initial values, you can test and change the values in each slot of that
+array. To get at a value stored within an array, use the array subscript expression:\n\nmyArray[subscript];
+\n\nThe myArray part of this expression is a variable holding an array object, although it can also be
+an expression that results in an array). The subscript is the slot within the array to access, which
+can also be an expression. Array subscripts start with 0, as they do in C and C++. So, an array
+with ten elements has array values from subscript 0 to 9.\n\nNote that all array subscripts are checked to make sure that they are inside the boundaries of the
+array (greater than 0 but less than the array’s length) either when your Java program is compiled
+or when it is run. It is impossible in Java to access or assign a value to an array element outside
+of the boundaries of the array. Note the following two statements, for example:\n\nString arr[] = new String[10];\n
+arr[10] = “eggplant”;\n\nA program with that last statement in it produces a compiler error at that line when you try to
+compile it. The array stored in arr has only ten elements numbered from 0, the element at
+subscript 10 doesn’t exist, and the Java compiler will check for that.\n\nIf the array subscript is calculated at run-time (for example, as part of a loop) and ends up outside
+the boundaries of the array, the Java interpreter also produces an error (actually, to be technically
+correct, it throws an exception). You’ll learn more about exceptions later on next week and on
+Day 18\nHow can you keep from overrunning the end of an array accidentally in your own programs?
+You can test for the length of the array in your programs using the length instance variable—
+it’s available for all array objects, regardless of type:\n\nint len = arr.length // returns 10\n\n"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Multidimensional Arrays"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Java does not support multidimensional arrays. However, you can declare and create an array
+of arrays (and those arrays can contain arrays, and so on, for however many dimensions you
+need), and access them as you would C-style multidimensional arrays:\n\nint coords[][] = new int[12][12];\n
+coords[0][0] = 1;\n
+coords[0][1] = 2;\n\n"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="if Conditionals"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="The if conditional, which enables you to execute different bits of code based on a simple test
+in Java, is nearly identical to if statements in C. if conditionals contain the keyword if,
+followed by a boolean test, followed by a statement (often a block statement) to execute if the
+test is true:\n\nif x  y\n
+ System.out.println(“x is smaller than y”);\n
+An optional else keyword provides the statement to execute if the test is false:\n
+if (x  y)\n
+ System.out.println(“x is smaller than y”);\n
+else System.out.println(“y is bigger.”);\nif (engineState == true )\n
+ System.out.println(“Engine is already on.”);\n
+else {\n
+ System.out.println(“Now starting Engine”);\n
+ if (gasLevel >= 1)\n
+ engineState = true;\n
+ else System.out.println(“Low on gas! Can’t start engine.”);\n
+}\n\nThis example uses the test (engineState == false). For boolean tests of this type, a common
+shortcut is merely to include the first part of the expression, rather than explicitly testing its value
+against true or false:\n\nif (engineState)\n
+ System.out.println(“Engine is on.”);\n
+else System.out.println(“Engine is off”);\n\n
++ "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="for Loops"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="The for loop, as in C, repeats a statement or block of statements some number of times until
+a condition is matched. for loops are frequently used for simple iteration in which you repeat
+a block of statements a certain number of times and then stop, but you can use for loops for just
+about any kind of loop.
+The for loop in Java looks roughly like this:\n\nfor (initialization; test; increment) {
+\n statements;
+}\n\nThe start of the for loop has three parts:\n\n■ initialization is an expression that initializes the start of the loop. If you have a loop
+index, this expression might declare and initialize it, for example, int i = 0. Variables
+that you declare in this part of the for loop are local to the loop itself; they cease
+existing after the loop is finished executing. (This is different from C or C++.)\n\n■ test is the test that occurs after each pass of the loop. The test must be a boolean
+expression or function that returns a boolean value, for example, i  10. If the test is
+true, the loop executes. Once the test is false, the loop stops executing.\n\n■ increment is any expression or function call. Commonly, the increment is used to
+change the value of the loop index to bring the state of the loop closer to returning
+false and completing.\n\nThe statement part of the for loop is the statement that is executed each time the loop iterates.
+Just as with if, you can include either a single statement here or a block; the previous example
+used a block because that is more common. Here’s an example of a for loop that initializes all
+the values of a String array to null strings:\n\nString strArray[] = new String[10];\n
+int i; // loop index\n
+for (i = 0; i  strArray.length; i++)\n
+ strArray[i] = “”;\n \nAny of the parts of the for loop can be empty statements, that is, you can simply include a
+semicolon with no expression or statement, and that part of the for loop will be ignored. Note
+that if you do use a null statement in your for loop, you may have to initialize or increment any
+loop variables or loop indices yourself elsewhere in the program.
+You can also have an empty statement for the body of your for loop, if everything you want to
+do is in the first line of that loop. For example, here’s one that finds the first prime number higher
+than 4000:\n\nfor (i = 4001; notPrime(i); i += 2);\n\nBecause the first semicolon ends the loop with an empty statement, the loop doesn’t actually do
+anything. The println function will be printed only once, because it’s actually outside the for
+loop entirely. Be careful not to make this mistake in your own Java programs.Because the first semicolon ends the loop with an empty statement, the loop doesn’t actually do
+anything. The println function will be printed only once, because it’s actually outside the for
+loop entirely. Be careful not to make this mistake in your own Java programs.
+ "/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="while and do Loops"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Finally, there are while and do loops. while and do loops, like for loops, enable a block of Java
+code to be executed repeatedly until a specific condition is met. Whether you use a for loop, a
+while, or a do is mostly a matter of your programming style.
+while and do loops, like for, are exactly the same as those same constructions in C and C++."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/slide_background"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Summary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Today, you learned about three main topics that you’ll most likely use quite often in your own
+Java programs: arrays, conditionals, and loops.
+You learned how to declare an array variable, create and assign an array object to that variable,
+and access and change elements within that array.\nConditionals include the if and switch statements, with which you can branch to different parts
+of your program based on a boolean test.
+Finally, you learned about the for, while, and do loops, each of which enable you to execute a
+portion of your program repeatedly until a given condition is met.
+Now that you’ve learned the small stuff, all that’s left is to go over the bigger issues of declaring
+classes and creating methods within which instances of those classes can communicate with each
+other by calling methods. Get to bed early tonight, because tomorrow is going to be a wild ride."/>
+
+
+
+
+
+
+</LinearLayout>
