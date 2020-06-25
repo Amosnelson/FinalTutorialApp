@@ -8,7 +8,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/txtclasses"
+        android:id="@+id/phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -36,7 +36,7 @@
         android:text="Object-oriented programming (OOP) is one of the bigger programming buzzwords of recent years, and you can spend years learning all about object-oriented programming methodologies and how they can make your life easier than The Old Way of programming. It all comes down to organizing your programs in ways that echo how things are put together in the real world."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtclasses" />
+        app:layout_constraintTop_toBottomOf="@+id/phrase" />
 
     <TextView
         android:id="@+id/textView32"

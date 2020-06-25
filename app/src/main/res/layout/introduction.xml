@@ -10,7 +10,7 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/txtclasses"
+        android:id="@+id/phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -52,7 +52,7 @@ Java application and a simple Java applet!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtclasses" />
+        app:layout_constraintTop_toBottomOf="@+id/phrase" />
 
     <TextView
         android:id="@+id/textView162"

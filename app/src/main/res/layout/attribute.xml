@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="HTML - Attributes"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="We have seen few HTML tags and their usage like heading tags h1, h2, paragraph tag p and other tags. We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of information.
+\n\nAn attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts − a name and a value
+\n\nThe name is the property you want to set. For example, the paragraph p element in the example carries an attribute whose name is align, which you can use to indicate the alignment of paragraph on the page.\n\n
+The value is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute: left, center and right.\n\n
+Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 recommendation."/>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/f"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/slide_background"
+        android:drawableTint="@color/colorPrimary"
+        android:padding="16sp"
+        android:text="Core Attributes"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="The four core attributes that can be used on the majority of HTML elements (although not all) are −
+\n\nId
+Title\n
+Class\n
+Style\n\nThe Id Attribute
+The id attribute of an HTML tag can be used to uniquely identify any element within an HTML page. There are two primary reasons that you might want to use an id attribute on an element −\n\n
+If an element carries an id attribute as a unique identifier, it is possible to identify just that element and its content.\n\nIf you have two elements of the same name within a Web page (or style sheet), you can use the id attribute to distinguish between elements that have the same name.\n\n
+We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish between two paragraph elements as shown below."/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ppp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="The title Attribute \n\nThe title attribute gives a suggested title for the element. They syntax for the title attribute is similar as explained for id attribute −
+        \n\nThe behavior of this attribute will depend upon the element that carries it, although it is often displayed as a tooltip when cursor comes over the element or while the element is loading.
+        "/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/io"/>
+
+
+
+
+
+</LinearLayout>

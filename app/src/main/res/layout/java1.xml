@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/trending"
+        android:id="@+id/tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/html_intro" />
 
     <TextView
-        android:id="@+id/txtjavabasic"
+        android:id="@+id/element"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -67,10 +67,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/trending" />
+        app:layout_constraintTop_toBottomOf="@+id/tag" />
 
     <TextView
-        android:id="@+id/txtworkingObj"
+        android:id="@+id/attribute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -87,10 +87,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtjavabasic" />
+        app:layout_constraintTop_toBottomOf="@+id/element" />
 
     <TextView
-        android:id="@+id/txtArray"
+        android:id="@+id/format"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -107,10 +107,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtworkingObj" />
+        app:layout_constraintTop_toBottomOf="@+id/attribute" />
 
     <TextView
-        android:id="@+id/txtclasses"
+        android:id="@+id/phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -127,10 +127,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtArray" />
+        app:layout_constraintTop_toBottomOf="@+id/format" />
 
     <TextView
-        android:id="@+id/txtMorei"
+        android:id="@+id/metaTag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -147,7 +147,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtclasses" />
+        app:layout_constraintTop_toBottomOf="@+id/phrase" />
 
     <TextView
         android:id="@+id/txtApplet"
@@ -167,7 +167,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMorei" />
+        app:layout_constraintTop_toBottomOf="@+id/metaTag" />
 
     <TextView
         android:id="@+id/differsv"

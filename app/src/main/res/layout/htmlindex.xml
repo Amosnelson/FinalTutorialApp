@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.myHtmlFragment">
+    tools:context=".htmlFragment.myHtmlFragment">
 
 
     <TextView
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/trending"
+        android:id="@+id/tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -40,7 +40,7 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Tags"
+        android:text="Basic Tags"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/html_intro" />
 
     <TextView
-        android:id="@+id/txtjavabasic"
+        android:id="@+id/element"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -61,16 +61,16 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Heading"
+        android:text=" Html Element"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/trending" />
+        app:layout_constraintTop_toBottomOf="@+id/tag" />
 
     <TextView
-        android:id="@+id/txtworkingObj"
+        android:id="@+id/attribute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -81,16 +81,16 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Paragraph"
+        android:text="HTML - Attributes"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtjavabasic" />
+        app:layout_constraintTop_toBottomOf="@+id/element" />
 
     <TextView
-        android:id="@+id/txtArray"
+        android:id="@+id/format"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -101,16 +101,16 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Hyperlink"
+        android:text="HTML - Formatting"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtworkingObj" />
+        app:layout_constraintTop_toBottomOf="@+id/attribute" />
 
     <TextView
-        android:id="@+id/txtclasses"
+        android:id="@+id/phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -121,16 +121,16 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Marquee"
+        android:text="HTML - Phrase Tags"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtArray" />
+        app:layout_constraintTop_toBottomOf="@+id/format" />
 
     <TextView
-        android:id="@+id/txtMorei"
+        android:id="@+id/metaTag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -141,13 +141,13 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Font"
+        android:text="HTML - Meta Tags"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtclasses" />
+        app:layout_constraintTop_toBottomOf="@+id/phrase" />
 
     <TextView
         android:id="@+id/txtApplet"
@@ -167,7 +167,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMorei" />
+        app:layout_constraintTop_toBottomOf="@+id/metaTag" />
 
     <TextView
         android:id="@+id/differsv"

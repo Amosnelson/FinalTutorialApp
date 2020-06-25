@@ -1,4 +1,4 @@
-package com.example.finaltutorialapp.fragment;
+package com.example.finaltutorialapp.htmlFragment;
 
 import android.os.Bundle;
 
@@ -26,6 +26,12 @@ public class myHtmlFragment extends Fragment {
     }
     private FrameLayout parentFrameLayout;
     private TextView htmlIntro;
+    private TextView htmlTag;
+    private TextView txtElement;
+    private TextView txtAttribute;
+    private TextView txtFormat;
+    private TextView txtPhrase;
+    private TextView txtMeta;
 
 
     @Override
@@ -37,6 +43,13 @@ public class myHtmlFragment extends Fragment {
         parentFrameLayout = getActivity().findViewById(R.id.main_framelayout);
 
         htmlIntro = view.findViewById(R.id.html_intro);
+        htmlTag = view.findViewById(R.id.tag);
+        txtElement = view.findViewById(R.id.element);
+        txtAttribute = view.findViewById(R.id.attribute);
+        txtFormat = view.findViewById(R.id.format);
+        txtPhrase = view.findViewById(R.id.phrase);
+        txtMeta = view.findViewById(R.id.metaTag);
+
 
 
 
@@ -48,12 +61,54 @@ public class myHtmlFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        txtFormat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new FormatingFragment());
+            }
+        });
+        txtMeta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new MetaFragment());
+            }
+        });
+
         htmlIntro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 setFragment(new IntroFragment());
 
+            }
+        });
+
+        htmlTag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new HtmlTagFragment());
+            }
+        });
+        txtElement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                setFragment(new ElementFragment());
+            }
+        });
+
+        txtAttribute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                setFragment(new AttributeFragment());
+            }
+        });
+
+        txtPhrase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new PhraseFragment());
             }
         });
     }

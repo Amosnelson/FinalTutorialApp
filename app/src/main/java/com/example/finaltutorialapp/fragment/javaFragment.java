@@ -55,12 +55,12 @@ public class javaFragment extends Fragment {
 
         parentFrameLayout = getActivity().findViewById(R.id.main_framelayout);
         intro = view.findViewById(R.id.html_intro);
-        oopJava = view.findViewById(R.id.trending);
-        javabasic = view.findViewById(R.id.txtjavabasic);
-        workingObj = view.findViewById(R.id.txtworkingObj);
-        arraytxt = view.findViewById(R.id.txtArray);
-        txtxclass = view.findViewById(R.id.txtclasses);
-        txtMore = view.findViewById(R.id.txtMorei);
+        oopJava = view.findViewById(R.id.tag);
+        javabasic = view.findViewById(R.id.element);
+        workingObj = view.findViewById(R.id.attribute);
+        arraytxt = view.findViewById(R.id.format);
+        txtxclass = view.findViewById(R.id.phrase);
+        txtMore = view.findViewById(R.id.metaTag);
         txtApplet = view.findViewById(R.id.txtApplet);
         txtGraph = view.findViewById(R.id.differsv);
         txtAnime = view.findViewById(R.id.txtanime);
