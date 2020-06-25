@@ -150,7 +150,7 @@
         app:layout_constraintTop_toBottomOf="@+id/phrase" />
 
     <TextView
-        android:id="@+id/txtApplet"
+        android:id="@+id/Comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -170,7 +170,7 @@
         app:layout_constraintTop_toBottomOf="@+id/metaTag" />
 
     <TextView
-        android:id="@+id/differsv"
+        android:id="@+id/images"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -187,10 +187,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtApplet" />
+        app:layout_constraintTop_toBottomOf="@+id/Comment" />
 
     <TextView
-        android:id="@+id/txtanime"
+        android:id="@+id/table"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -207,10 +207,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/differsv" />
+        app:layout_constraintTop_toBottomOf="@+id/images" />
 
     <TextView
-        android:id="@+id/moreanim"
+        android:id="@+id/list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -227,7 +227,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtanime" />
+        app:layout_constraintTop_toBottomOf="@+id/table" />
 
     <TextView
         android:id="@+id/txtmanage"
@@ -247,7 +247,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/moreanim" />
+        app:layout_constraintTop_toBottomOf="@+id/list" />
 
     <TextView
         android:id="@+id/txtAbstract"

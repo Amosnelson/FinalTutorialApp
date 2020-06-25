@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".htmlFragment.CommentsFragment">
+    tools:context=".htmlFragment.QuickFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,8 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            
-            <include layout="@layout/comments"/>
+            <include layout="@layout/table"/>
 
 
             <LinearLayout
@@ -61,5 +61,6 @@
         </LinearLayout>
 
     </ScrollView>
+
 
 </FrameLayout>

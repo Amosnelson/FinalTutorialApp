@@ -14,7 +14,7 @@
         android:background="@drawable/slide_background"
         android:drawableTint="@color/colorPrimary"
         android:padding="16sp"
-        android:text="HTML - Comments"
+        android:text="HTML - Tables"
         android:textColor="@color/colorPrimary"
         android:textSize="16sp" />
 
@@ -24,16 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:text="Comment is a piece of code which is ignored by any web browser. It is a good practice to add comments into your HTML code, especially in complex documents, to indicate sections of a document, and any other notes to anyone looking at the code. Comments help you and others understand your code and increases code readability.
-HTML comments are placed in between  tags. So, any content placed with-in  tags will be treated as comment and will be completely ignored by the browser."/>
-
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bs"/>
-
+        android:text="The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.
+The HTML tables are created using the table tag in which the tr tag is used to create table rows and td tag is used to create data cells. The elements under td are regular and left aligned by default"/>
 
 
     <TextView
@@ -42,34 +34,30 @@ HTML comments are placed in between  tags. So, any content placed with-in  tags 
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:textStyle="bold"
-        android:text="Valid vs Invalid Comments"/>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="Comments do not nest which means a comment cannot be put inside another comment. Second the double-dash sequence  may not appear inside a comment except as part of the closing  tag. You must also make sure that there are no spaces in the start-of comment string."
-        />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/oio"/>
+        android:text="Example"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:text="But, following line is not a valid comment and will be displayed by the browser. This is because there is a space between the left angle bracket and the exclamation mark."
-        />
+        android:text="The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.
+The HTML tables are created using the table tag in which the tr tag is used to create table rows and td tag is used to create data cells. The elements under td are regular and left aligned by default"/>
+
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/popo"/>
+        android:src="@drawable/tad"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Here, the border is an attribute of table tag and it is used to put a border across all the cells. If you do not need a border, then you can use border = 0"/>
+
 
     <TextView
         android:layout_width="match_parent"
@@ -77,25 +65,20 @@ HTML comments are placed in between  tags. So, any content placed with-in  tags 
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:textStyle="bold"
-        android:text="Multiline Comments"/>
-
+        android:text="Table Heading"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:text="So far we have seen single line comments, but HTML supports multi-line comments as well.
-You can comment multiple lines by the special beginning tag  and ending tag  placed before the first line and end of the last line as shown in the given example below."/>
+        android:text="Table heading can be defined using ..th.. tag. This tag will be put to replace ..td.. tag, which is used to represent actual data cell. Normally you will put your top row as table heading as shown below, otherwise you can use ..th.. element in any row. Headings, which are defined in ..th.. tag are centered and bold by default."/>
+
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/mul"/>
-
-
-
-
-
+        android:src="@drawable/hhh"/>
 
 </LinearLayout>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -14,7 +15,7 @@
         android:background="@drawable/slide_background"
         android:drawableTint="@color/colorPrimary"
         android:padding="16sp"
-        android:text="HTML - Comments"
+        android:text="HTML - Lists"
         android:textColor="@color/colorPrimary"
         android:textSize="16sp" />
 
@@ -24,17 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:text="Comment is a piece of code which is ignored by any web browser. It is a good practice to add comments into your HTML code, especially in complex documents, to indicate sections of a document, and any other notes to anyone looking at the code. Comments help you and others understand your code and increases code readability.
-HTML comments are placed in between  tags. So, any content placed with-in  tags will be treated as comment and will be completely ignored by the browser."/>
-
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bs"/>
-
-
+        android:text="HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. Lists may contain −
+\n\nul − An unordered list. This will list items using plain bullets.\n\n ol − An ordered list. This will use different schemes of numbers to list your items.\n\n
+dl− A definition list. This arranges your items in the same way as they are arranged in a dictionary."
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -42,34 +36,21 @@ HTML comments are placed in between  tags. So, any content placed with-in  tags 
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:textStyle="bold"
-        android:text="Valid vs Invalid Comments"/>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="Comments do not nest which means a comment cannot be put inside another comment. Second the double-dash sequence  may not appear inside a comment except as part of the closing  tag. You must also make sure that there are no spaces in the start-of comment string."
-        />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/oio"/>
+        android:text="HTML Unordered Lists"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:text="But, following line is not a valid comment and will be displayed by the browser. This is because there is a space between the left angle bracket and the exclamation mark."
-        />
+        android:text="An unordered list is a collection of related items that have no special order or sequence. This list is created by using HTML ul tag. Each item in the list is marked with a bullet."/>
+
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/popo"/>
+        android:src="@drawable/ki"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -77,25 +58,46 @@ HTML comments are placed in between  tags. So, any content placed with-in  tags 
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:textStyle="bold"
-        android:text="Multiline Comments"/>
-
+        android:text="The type Attribute"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:text="So far we have seen single line comments, but HTML supports multi-line comments as well.
-You can comment multiple lines by the special beginning tag  and ending tag  placed before the first line and end of the last line as shown in the given example below."/>
+        android:text="You can use type attribute for ..ul.. tag to specify the type of bullet you like. By default, it is a disc. Following are the possible options −"/>
+
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/mul"/>
+        android:src="@drawable/ui"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        android:text="Example"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Following is an example where we used ..ul type = square"/>
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/poi"/>
 
-
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/disc"/>
 
 </LinearLayout>

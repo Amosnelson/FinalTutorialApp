@@ -150,7 +150,7 @@
         app:layout_constraintTop_toBottomOf="@+id/phrase" />
 
     <TextView
-        android:id="@+id/txtApplet"
+        android:id="@+id/Comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -161,7 +161,7 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML List"
+        android:text="HTML - Comments"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
@@ -170,7 +170,7 @@
         app:layout_constraintTop_toBottomOf="@+id/metaTag" />
 
     <TextView
-        android:id="@+id/differsv"
+        android:id="@+id/images"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -181,36 +181,36 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Table"
+        android:text="HTML - Images"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtApplet" />
+        app:layout_constraintTop_toBottomOf="@+id/Comment" />
 
     <TextView
-        android:id="@+id/txtanime"
+        android:id="@+id/table"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Form"
+        android:text="HTML - Tables"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/differsv" />
+        app:layout_constraintTop_toBottomOf="@+id/images" />
 
     <TextView
-        android:id="@+id/moreanim"
+        android:id="@+id/list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -221,13 +221,13 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Attributes"
+        android:text="HTML - Lists"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtanime" />
+        app:layout_constraintTop_toBottomOf="@+id/table" />
 
     <TextView
         android:id="@+id/txtmanage"
@@ -241,13 +241,13 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text=" HTML Formatting"
+        android:text="HTML - Quick Guide"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/moreanim" />
+        app:layout_constraintTop_toBottomOf="@+id/list" />
 
     <TextView
         android:id="@+id/txtAbstract"

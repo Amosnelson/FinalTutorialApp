@@ -32,6 +32,10 @@ public class myHtmlFragment extends Fragment {
     private TextView txtFormat;
     private TextView txtPhrase;
     private TextView txtMeta;
+    private TextView txtComment;
+    private TextView txtImage;
+    private TextView txtTable;
+    private TextView txtList;
 
 
     @Override
@@ -49,6 +53,10 @@ public class myHtmlFragment extends Fragment {
         txtFormat = view.findViewById(R.id.format);
         txtPhrase = view.findViewById(R.id.phrase);
         txtMeta = view.findViewById(R.id.metaTag);
+        txtComment = view.findViewById(R.id.Comment);
+        txtImage = view.findViewById(R.id.images);
+        txtTable = view.findViewById(R.id.table);
+        txtList = view.findViewById(R.id.list);
 
 
 
@@ -65,6 +73,35 @@ public class myHtmlFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 setFragment(new FormatingFragment());
+            }
+        });
+
+        txtTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new TableFragment());
+            }
+        });
+
+
+        txtList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new ListsFragment());
+            }
+        });
+
+
+        txtImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new ImagesFragment());
+            }
+        });
+        txtComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new CommentsFragment());
             }
         });
         txtMeta.setOnClickListener(new View.OnClickListener() {
