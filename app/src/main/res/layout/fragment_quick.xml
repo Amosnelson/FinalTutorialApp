@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/table"/>
+            <include layout="@layout/quick"/>
 
 
             <LinearLayout

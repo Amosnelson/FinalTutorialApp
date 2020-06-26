@@ -65,9 +65,9 @@ public class javaFragment extends Fragment {
         txtGraph = view.findViewById(R.id.images);
         txtAnime = view.findViewById(R.id.table);
         txtmoreAnim = view.findViewById(R.id.list);
-        txtmanage = view.findViewById(R.id.txtmanage);
-        txtabstract = view.findViewById(R.id.txtAbstract);
-        txttidbits = view.findViewById(R.id.tidbit);
+        txtmanage = view.findViewById(R.id.quick);
+        txtabstract = view.findViewById(R.id.useful);
+        txttidbits = view.findViewById(R.id.discussion);
         txtmodifier = view.findViewById(R.id.txtmodifiers);
         txtpackages = view.findViewById(R.id.packages);
         txtExcepyion = view.findViewById(R.id.exceptiion);

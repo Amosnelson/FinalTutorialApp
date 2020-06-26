@@ -230,7 +230,7 @@
         app:layout_constraintTop_toBottomOf="@+id/table" />
 
     <TextView
-        android:id="@+id/txtmanage"
+        android:id="@+id/quick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -250,7 +250,7 @@
         app:layout_constraintTop_toBottomOf="@+id/list" />
 
     <TextView
-        android:id="@+id/txtAbstract"
+        android:id="@+id/useful"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -261,16 +261,16 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Style"
+        android:text="HTML - Useful Resources"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtmanage" />
+        app:layout_constraintTop_toBottomOf="@+id/quick" />
 
     <TextView
-        android:id="@+id/tidbit"
+        android:id="@+id/discussion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -281,13 +281,13 @@
         android:background="@drawable/slide_background"
         android:elevation="3dp"
         android:padding="5dp"
-        android:text="HTML Images"
+        android:text="Discuss HTML"
         android:textColor="#000000"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAbstract" />
+        app:layout_constraintTop_toBottomOf="@+id/useful" />
 
     <TextView
         android:id="@+id/txtmodifiers"
@@ -307,7 +307,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tidbit" />
+        app:layout_constraintTop_toBottomOf="@+id/discussion" />
 
     <TextView
         android:id="@+id/packages"

@@ -14,7 +14,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.example.finaltutorialapp.R;
-import com.example.finaltutorialapp.htmlFragment.IntroFragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -36,6 +35,9 @@ public class myHtmlFragment extends Fragment {
     private TextView txtImage;
     private TextView txtTable;
     private TextView txtList;
+    private TextView txtQuick;
+    private TextView txtUseful;
+    private TextView txtDiscussion;
 
 
     @Override
@@ -57,6 +59,9 @@ public class myHtmlFragment extends Fragment {
         txtImage = view.findViewById(R.id.images);
         txtTable = view.findViewById(R.id.table);
         txtList = view.findViewById(R.id.list);
+        txtQuick = view.findViewById(R.id.quick);
+        txtUseful = view.findViewById(R.id.useful);
+        txtDiscussion = view.findViewById(R.id.discussion);
 
 
 
@@ -73,6 +78,26 @@ public class myHtmlFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 setFragment(new FormatingFragment());
+            }
+        });
+        txtQuick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new QuickFragment());
+            }
+        });
+
+        txtUseful.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new UsefulFragment());
+            }
+        });
+
+        txtDiscussion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setFragment(new DiscussionFragment());
             }
         });
 
