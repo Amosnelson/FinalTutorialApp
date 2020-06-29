@@ -6,17 +6,17 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/javaTutorial"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/icons"
             android:title="Java Tutorial" />
         <item
             android:id="@+id/htmlTutorial"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/html"
             android:title="Html Tutorial" />
 
 
         <item
             android:id="@+id/quiz"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/test"
             android:title="Quiz" />
         <item
             android:id="@+id/sign_out"
