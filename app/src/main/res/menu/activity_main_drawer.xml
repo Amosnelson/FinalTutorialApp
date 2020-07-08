@@ -18,10 +18,7 @@
             android:id="@+id/quiz"
             android:icon="@drawable/test"
             android:title="Quiz" />
-        <item
-            android:id="@+id/sign_out"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Sign Out" />
+
 
     </group>
 </menu>
