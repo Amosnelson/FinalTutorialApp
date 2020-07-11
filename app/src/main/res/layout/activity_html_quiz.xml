@@ -15,9 +15,9 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-     >
+        >
 
-<!--        Name Input-->
+        <!--        Name Input-->
 
         <!--Question 1-->
         <TextView
@@ -29,7 +29,7 @@
             android:background="@drawable/slide_background"
             android:drawableTint="@color/colorPrimary"
             android:padding="16sp"
-            android:text="Java Quiz"
+            android:text="Html Quiz"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp" />
 
@@ -47,7 +47,7 @@
 
         <TextView
             style="@style/QuestionText"
-            android:text="@string/question_1" />
+            android:text="@string/question_1h" />
 
         <RadioGroup
             android:id="@+id/question_1"
@@ -57,22 +57,22 @@
             <RadioButton
                 android:id="@+id/answer1_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/plus" />
+                android:text="@string/frameset" />
 
             <RadioButton
                 android:id="@+id/answer2_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/news" />
+                android:text="@string/yes" />
 
             <RadioButton
                 android:id="@+id/answer3_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/ins" />
+                android:text="@string/no" />
 
             <RadioButton
                 android:id="@+id/answer4_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/minus" />
+                android:text="@string/nul" />
         </RadioGroup>
 
 
@@ -90,7 +90,7 @@
 
         <TextView
             style="@style/QuestionText"
-            android:text="@string/question_2" />
+            android:text="@string/question_2h" />
 
         <RadioGroup
             android:id="@+id/question_2"
@@ -102,17 +102,17 @@
             <RadioButton
                 android:id="@+id/answer2_2radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/answer1" />
+                android:text="@string/answer1h" />
 
             <RadioButton
                 android:id="@+id/answer3_2radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/answer2" />
+                android:text="@string/answer2h" />
 
             <RadioButton
                 android:id="@+id/answer4_2radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/answer3" />
+                android:text="@string/answer3h" />
 
 
 
@@ -129,7 +129,7 @@
 
         <TextView
             style="@style/QuestionText"
-            android:text="@string/question_3" />
+            android:text="@string/question_3h" />
 
         <RadioGroup
             android:id="@+id/question_3"
@@ -139,22 +139,19 @@
             <RadioButton
                 android:id="@+id/publ_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/publ" />
+                android:text="@string/publh" />
 
             <RadioButton
                 android:id="@+id/sensitive_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/sensitive" />
+                android:text="@string/sensitiveh" />
 
             <RadioButton
                 android:id="@+id/confidential_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/confidential" />
+                android:text="@string/confidentialh" />
 
-            <RadioButton
-                android:id="@+id/private_radiobutton"
-                style="@style/RadioButton_Answer"
-                android:text="@string/_private" />
+
 
 
         </RadioGroup>
@@ -175,29 +172,26 @@
 
 
         <RadioGroup
-            android:id="@+id/question_4"
+            android:id="@+id/question_4h"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/managerial_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/managerial"  />
+                android:text="@string/managerialh"  />
 
             <RadioButton
                 android:id="@+id/physical_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/physical" />
+                android:text="@string/physicalh" />
 
             <RadioButton
                 android:id="@+id/logical_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/logical" />
+                android:text="@string/logicalh" />
 
-            <RadioButton
-                android:id="@+id/administrative_checkbox"
-                style="@style/RadioButton_Answer"
-                android:text="@string/administrative" />
+
 
 
         </RadioGroup>
@@ -212,11 +206,11 @@
         <!--Question 5-->
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="@string/num_question_5" />
+            android:text="@string/num_question_5h" />
 
         <TextView
             style="@style/QuestionText"
-            android:text="@string/question_5" />
+            android:text="@string/question_5h" />
 
         <RadioGroup
             android:id="@+id/question_5"
@@ -226,23 +220,19 @@
             <RadioButton
                 android:id="@+id/answer_5_1_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/answer_5_1" />
+                android:text="@string/answer_5_1h" />
 
             <RadioButton
                 android:id="@+id/answer_5_2_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/answer_5_2" />
+                android:text="@string/answer_5_2h" />
 
 
             <RadioButton
                 android:id="@+id/answer_5_3_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/answer_5_3" />
+                android:text="@string/answer_5_3h" />
 
-            <RadioButton
-                android:id="@+id/answer_5_4_checkbox"
-                style="@style/RadioButton_Answer"
-                android:text="@string/answer_5_4" />
 
         </RadioGroup>
 
@@ -254,11 +244,11 @@
         <!--Question 6-->
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="@string/num_question_6" />
+            android:text="@string/num_question_6h" />
 
         <TextView
             style="@style/QuestionText"
-            android:text="@string/question_6" />
+            android:text="@string/question_6h" />
 
         <RadioGroup
             android:id="@+id/question_6"
@@ -268,22 +258,18 @@
             <RadioButton
                 android:id="@+id/passive_attack_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/passive_attack" />
+                android:text="@string/passive_attackh" />
 
             <RadioButton
                 android:id="@+id/active_attack_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/active_attack" />
+                android:text="@string/active_attackh" />
 
             <RadioButton
                 android:id="@+id/close_in_attack_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/close_in_attack" />
+                android:text="@string/close_in_attackh" />
 
-            <RadioButton
-                android:id="@+id/insider_attack_radiobutton"
-                style="@style/RadioButton_Answer"
-                android:text="@string/insider_attack" />
 
 
         </RadioGroup>
@@ -294,11 +280,11 @@
         <!--Question 7-->
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="@string/num_question_7" />
+            android:text="@string/num_question_7h" />
 
         <TextView
             style="@style/QuestionText"
-            android:text="@string/Question_7" />
+            android:text="@string/Question_7h" />
 
         <RadioGroup
             android:id="@+id/question_7"
@@ -308,22 +294,18 @@
             <RadioButton
                 android:id="@+id/physical_security_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/physical_security" />
+                android:text="@string/physical_securityh" />
 
             <RadioButton
                 android:id="@+id/administrative_security_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/administrative_security" />
+                android:text="@string/administrative_securityh" />
 
             <RadioButton
                 android:id="@+id/logical_security_radiobutton"
                 style="@style/RadioButton_Answer"
-                android:text="@string/logical_security" />
+                android:text="@string/logical_securityh" />
 
-            <RadioButton
-                android:id="@+id/vulnerability_radiobutton"
-                style="@style/RadioButton_Answer"
-                android:text="@string/vulnerability" />
         </RadioGroup>
 
         <!--Line-->
@@ -332,11 +314,11 @@
         <!--Question 8-->
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="@string/num_question_8" />
+            android:text="@string/num_question_8h" />
 
         <TextView
             style="@style/QuestionText"
-            android:text="@string/question_8" />
+            android:text="@string/question_8h" />
 
 
 
@@ -348,22 +330,18 @@
             <RadioButton
                 android:id="@+id/packet_capture_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/packet_capture" />
+                android:text="@string/packet_captureh" />
 
             <RadioButton
                 android:id="@+id/password_attack_8_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/password_attack" />
+                android:text="@string/password_attackh" />
 
             <RadioButton
                 android:id="@+id/dumpster_driving_8_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/dumpster_driving" />
+                android:text="@string/dumpster_drivingh" />
 
-            <RadioButton
-                android:id="@+id/botnet_8_checkbox"
-                style="@style/RadioButton_Answer"
-                android:text="@string/botnet" />
         </RadioGroup>
 
 
@@ -376,11 +354,11 @@
         <!--Question 9-->
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="@string/num_question_9" />
+            android:text="@string/num_question_9h" />
 
         <TextView
             style="@style/QuestionText"
-            android:text="@string/question_9" />
+            android:text="@string/question_9h" />
 
 
         <RadioGroup
@@ -391,22 +369,19 @@
             <RadioButton
                 android:id="@+id/packetcapture_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/datadiddling" />
+                android:text="@string/datadiddlingh" />
 
             <RadioButton
                 android:id="@+id/passwordattack_8_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/datavdiddling" />
+                android:text="@string/datavdiddlingh" />
 
             <RadioButton
                 android:id="@+id/dumpsterdriving_8_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/datdiddlinlg" />
+                android:text="@string/datdiddlinlgh" />
 
-            <RadioButton
-                android:id="@+id/botnet_checkbox"
-                style="@style/RadioButton_Answer"
-                android:text="@string/datdiddlling" />
+
         </RadioGroup>
 
 
@@ -421,11 +396,11 @@
         <!--Question 9-->
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="@string/num_question_10" />
+            android:text="@string/num_question_10h" />
 
         <TextView
             style="@style/QuestionText"
-            android:text="@string/question_10" />
+            android:text="@string/question_10h" />
 
 
 
@@ -437,28 +412,24 @@
             <RadioButton
                 android:id="@+id/packetcaptureheckbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/denial_of_servie" />
+                android:text="@string/denial_of_servieh" />
 
             <RadioButton
                 android:id="@+id/passwordattack8_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/denial_of_sece" />
+                android:text="@string/denial_of_seceh" />
 
             <RadioButton
                 android:id="@+id/dumpsterdriving_checkbox"
                 style="@style/RadioButton_Answer"
-                android:text="@string/denial_of_srvie" />
+                android:text="@string/denial_of_srvieh" />
 
-            <RadioButton
-                android:id="@+id/botnet_ceckbox"
-                style="@style/RadioButton_Answer"
-                android:text="@string/denial_of_srvic" />
         </RadioGroup>
 
 
 
         <Button
-            android:id="@+id/end_test_button"
+            android:id="@+id/end_test_buttonh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -478,7 +449,7 @@
             android:text="@string/test_result" />
 
         <TextView
-            android:id="@+id/test_result_text_view"
+            android:id="@+id/test_result_text_viewh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

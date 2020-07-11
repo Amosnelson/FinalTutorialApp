@@ -13,11 +13,16 @@
             android:icon="@drawable/html"
             android:title="Html Tutorial" />
 
+        <item
+            android:id="@+id/htmlquiz"
+            android:icon="@drawable/html"
+            android:title="Html Quiz" />
+
 
         <item
             android:id="@+id/quiz"
             android:icon="@drawable/test"
-            android:title="Quiz" />
+            android:title="Java Quiz" />
 
 
     </group>

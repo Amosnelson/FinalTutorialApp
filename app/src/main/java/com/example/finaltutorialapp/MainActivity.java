@@ -183,12 +183,14 @@ public class MainActivity extends AppCompatActivity
             gotoFragment("My Html", new myHtmlFragment(), Html_FRAGMENT);
 
 
-
-        } else if (id == R.id.quiz)
-        {
-            Intent intent = new Intent(MainActivity.this,QuizActivity.class);
+        } else if (id == R.id.quiz) {
+            Intent intent = new Intent(MainActivity.this, QuizActivity.class);
             startActivity(intent);
 
+        } else if (id == R.id.htmlquiz)
+        {
+            Intent intent = new Intent(MainActivity.this,HtmlQuizActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

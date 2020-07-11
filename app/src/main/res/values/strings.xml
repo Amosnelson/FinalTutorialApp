@@ -133,4 +133,128 @@
     <string name="test_result_score">"Score: "</string>
 
 
+
+
+<!--    html quiz-->
+
+
+    <!--Question 1-->
+    <string name="hnum_question_1">Question 1</string>
+    <string name="question_1h">Is it possible to link within the current page ?</string>
+
+    <!--Answers to the question 1-->
+    <string name="frameset">Only in framesets</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="nul">Null</string>
+
+
+    <!--Question 2-->
+    <string name="hnum_question_2">Question 2</string>
+    <string name="question_2h">Which section is used for text and tags that are shown directly on your web page ?</string>
+
+    <!--Answers to the question 2-->
+    <string name="answer1h">Head</string>
+    <string name="answer2h">Metatags</string>
+    <string name="answer3h">Body</string>
+
+
+    <!--Question 3-->
+    <string name="num_question_3h">Question 3</string>
+    <string name="question_3h"> Why should you add alternative text to your images ??</string>
+
+    <!--Answers to the question 3-->
+    <string name="publh">In case the user wishes to load a different picture.</string>
+    <string name="sensitiveh">So the users can get an idea of what the image is before it loads</string>
+    <string name="confidentialh">So the user can save the image using the text as a name</string>
+
+    <!--Question 4-->
+    <string name="question_4h">  What is used to store information usually relevant to browsers and searchengines?</string>
+    <string name="num_question_4h">Question 4</string>
+
+    <!--Answers to the question 4-->
+    <string name="managerialh">Cookies</string>
+    <string name="physicalh">Metatags</string>
+    <string name="logicalh"> Tabs.</string>
+
+
+    <!--Question 5-->
+    <string name="num_question_5h">Question 5</string>
+    <string name="question_5h">Why should you specify a background color if you are using an image for the actual background of your page ?</string>
+
+    <!--Answers to the question 5-->
+    <string name="answer_5_1h"> The background color will be shown until the image loads</string>
+    <string name="answer_5_2h"> In case the image doesnt fit right.</string>
+    <string name="answer_5_3h"> So the text shows up better</string>
+
+
+    <string name="num_question_6h">Question 6</string>
+    <string name="question_6h"> What tag tells the browser where the page starts and stops ?</string>
+
+    <!--Answers to the question 6-->
+    <string name="passive_attackh">  body </string>
+    <string name="active_attackh">Shead</string>
+    <string name="close_in_attackh">html</string>
+
+
+    <!--Question 7-->
+    <string name="num_question_7h">Question 7</string>
+    <string name="Question_7h"> - One should never combine the "start" and "type" option ?</string>
+
+    <!--Answers to the question 7-->
+    <string name="physical_securityh"> True</string>
+    <string name="administrative_securityh">False</string>
+    <string name="logical_securityh">Sometimes True, sometimes False</string>
+
+    <!--Question 8-->
+    <string name="num_question_8h">Question 8</string>
+    <string name="question_8h"> Adding a border to your image helps the visitor to recognize it as what ?</string>
+
+    <!--Answers to the question 8-->
+    <string name="packet_captureh">A Link</string>
+    <string name="password_attackh">A really great picture</string>
+    <string name="dumpster_drivingh"> A frame</string>
+
+    <!--Question 9-->
+    <string name="num_question_9h">Question 9</string>
+    <string name="question_9h"> Which of the following is NOT a valid pair for browser safe colors ?</string>
+
+    <!--Answers to the question 9-->
+    <string name="datadiddlingh">CC</string>
+    <string name="datavdiddlingh">OO</string>
+    <string name="datdiddlinlgh">AA</string>
+    <!--Rest of the answers to question 9 to watch in the answer to question 8 above-->
+
+
+
+    <!--Question 10-->
+    <string name="num_question_10h">Question 10</string>
+    <string name="question_10h">Imagelinks can show a text label if you add which property?</string>
+
+    <!--Answers to the question 9-->
+    <string name="denial_of_servieh">alternative</string>
+    <string name="denial_of_seceh">alt</string>
+    <string name="denial_of_srvieh">str</string>
+
+    <!--Rest of the answers to question 10 to watch in the answer to question 8 above-->
+
+    <!--Button "End Test"-->
+    <string name="end_testh">End test</string>
+
+    <!--Test Result-->
+    <string name="test_result_nameh">"Name: "</string>
+    <string name="test_resulth">Test Result</string>
+    <string name="test_result_scoreh">"Score: "</string>
+
+
+
+
+
+
+
+
+
+
+
+
 </resources>
