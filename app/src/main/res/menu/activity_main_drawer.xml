@@ -24,6 +24,16 @@
             android:icon="@drawable/test"
             android:title="Java Quiz" />
 
+        <item
+            android:id="@+id/downloadEbooks"
+            android:icon="@drawable/test"
+            android:title="Quote" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/test"
+            android:title="Logout" />
+
 
     </group>
 </menu>

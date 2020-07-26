@@ -1,5 +1,7 @@
 package com.example.finaltutorialapp.fragment;
 
+import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -7,13 +9,19 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.example.finaltutorialapp.R;
+
+import java.util.Random;
+
+import static androidx.constraintlayout.widget.Constraints.TAG;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,6 +51,9 @@ public class javaFragment extends Fragment {
     private TextView txtExcepyion;
     private TextView txtMulti;
     private TextView txtDiffer;
+
+
+
 
 
 
@@ -84,17 +95,25 @@ public class javaFragment extends Fragment {
         return  view;
     }
 
+
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-intro.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        setFragment(new IntroFragment());
 
-    }
-});
+        intro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                setFragment(new IntroFragment());
+
+            }
+        });
+
+
+
+
         oopJava.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,7 +145,7 @@ intro.setOnClickListener(new View.OnClickListener() {
         txtxclass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setFragment(new classesAppFragment());
+                setFragment(new classesAppFragment()) ;
             }
         });
 

@@ -24,6 +24,8 @@ public class RegisterActivity extends AppCompatActivity {
         setDefaultFragment(new SignInFragment());
     }
 
+
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 

@@ -101,7 +101,7 @@ public class SignUpFragment extends Fragment {
         closeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                mainIntent();
+              setFragment(new SignInFragment());
             }
         });
 

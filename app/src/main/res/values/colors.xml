@@ -5,5 +5,8 @@
     <color name="btnRed">#9f0000</color>
     <color name="successGreen">#11A10C</color>
     <color name="colorAccent">#ffffff</color>
+    <color name="background">#313233</color>
     <color name="RecyclerViewBackground">#d6d6d6</color>
+    <color name="white">#EEEEEE</color>
+    <color name="black">#FFFFFF</color>
 </resources>

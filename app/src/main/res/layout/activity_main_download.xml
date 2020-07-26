@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainDownloadActivity"
+>
+
+    <EditText
+        android:id="@+id/etQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_element"
+        android:inputType="text"
+        android:hint="@string/et_hint_search"
+        android:textAlignment="center"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_button_height"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_text_search"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:onClick="execute" />
+
+</RelativeLayout>
