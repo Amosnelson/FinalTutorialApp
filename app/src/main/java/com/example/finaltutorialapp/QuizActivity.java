@@ -95,6 +95,7 @@ public class QuizActivity extends AppCompatActivity {
                 answerRadio = (RadioButton) findViewById(R.id.confidential_radiobutton);
                 answerRadio = (RadioButton) findViewById(R.id.publ_radiobutton);
         }
+
     }
     public void question_4() {
         RadioButton answerRadio;

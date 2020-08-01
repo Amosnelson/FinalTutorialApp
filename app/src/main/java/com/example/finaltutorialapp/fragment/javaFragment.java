@@ -111,9 +111,6 @@ public class javaFragment extends Fragment {
             }
         });
 
-
-
-
         oopJava.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
